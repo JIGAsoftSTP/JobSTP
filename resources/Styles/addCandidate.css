@@ -1,0 +1,592 @@
+body{
+	background: #f1f1f1;
+	/*border: 1px solid red;*/
+}
+
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: 'Roboto', sans-serif;
+}
+
+.content{
+	display: flex;
+	height: 100%;
+	overflow: hidden;
+	color: #fff;
+}
+
+.content .contentLeft{
+	background: #5DA4DA;
+	width: 20%;
+	max-width: 25%;
+	padding: 10px;
+	margin-right: 20px;
+	display: flex;
+	flex-direction: column;
+	height: 100%;
+}
+.content .contentRight{
+	width: 60%;
+	max-width: 70%;
+	padding: 5px 0;
+}
+
+/*---------------Left--------------*/
+
+.content .contentLeft .areaFoto {
+	width: 100%;
+	height: 250px;	
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+.content .contentLeft .areaFoto h1{
+	font-weight: lighter;
+	font-size: 40pt;
+	padding: 5px 0;
+	text-align: center;
+}
+.content .contentLeft .areaFoto img{
+	width: 60%;
+	border: none;
+	border-radius: 50%;
+}
+.content .contentLeft .AreaMenu ul{
+	display: flex;
+	flex-direction: column;
+	font-weight: lighter;
+}
+.content .contentLeft .AreaMenu ul li{
+	list-style: none;
+	margin: 3px;
+	color: #fff;
+	padding: 10px;
+	margin-right: -5%;
+	border-radius: 5px;
+	cursor: pointer;
+}
+.content .contentLeft .AreaMenu ul li i{
+	padding: 10px;
+}
+.content .contentLeft .AreaMenu ul li:hover{
+	background: #72b0df;
+	margin-right: -4%;
+}
+.content .contentLeft .AreaMenu ul .active{
+	background: #f1f1f1;
+	color: #666;
+	font-weight: normal;
+	
+}
+
+
+
+/*----------------------Right-------------*/
+
+.content .contentRight > div{
+	color: #333;
+	padding: 10px;
+	margin: 10px 20px
+	background: #fff;
+	box-shadow: 0 0 5px -1px #ccc;
+	display: flex;
+	z-index: 1;
+}
+.content .contentRight .AreaTitle{
+	height: 18%;
+	justify-content: space-between;
+	align-items: center;
+}
+.content .contentRight .AreaForm{
+	height: 67%;
+}
+.content .contentRight .AreaButtons{
+	height: 10%;
+	/*margin-top: -5px !important;*/
+}
+
+ /*-------------Title--------------*/
+
+.content .contentRight .AreaTitle > div:first-child{
+	flex-direction: column;	
+	width: 87%;
+}
+.content .contentRight .AreaTitle > div:nth-child(2){
+	flex-direction: column;	
+	width: 13%;
+	margin-top: 20px;
+	text-align: center;
+}
+.content .contentRight .AreaTitle > div h4{
+	margin: 5px;
+	color: #777;
+	font-weight: normal;
+	font-size: 13pt;
+}
+.content .contentRight .AreaTitle > div p{
+	margin: 5px;
+	color: #6AC239;
+	font-size: 20pt;
+}
+
+.content .contentRight .AreaTitle h3{
+	font-weight: lighter;
+	color: #333;
+	font-size: 20pt;
+	padding-left: 1rem;
+}
+
+/*-----------------ProgressBar---------------*/
+
+.content .contentRight .AreaTitle .ProgressBar{
+	counter-reset: step;
+	display: flex;
+	justify-content: space-around;
+	margin-top: 1rem;
+}
+.content .contentRight .AreaTitle .ProgressBar li{
+	position: relative;
+	list-style-type: none;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	border-radius: 50%;
+	background: #fff;
+	width: 40px;
+	height: 40px;
+	font-size: 10pt;
+	border: 2px solid #ddd;
+	color: #ccc;
+	cursor: pointer;
+}
+.content .contentRight .AreaTitle .ProgressBar li.active{
+	background-color: #6AC239;
+	color: #fff;
+	border: none;
+}
+
+.content .contentRight .AreaTitle .ProgressBar li:after{
+	content: '';
+	position: absolute;
+	width: 3.5rem;
+	margin-left: 1.2rem;
+	height: 2px;
+	background-color: #ddd;
+	top: 18px;
+	left: 50%;
+	cursor: default;
+	z-index: 1;
+}
+.content .contentRight .AreaTitle .ProgressBar li:last-child:after{
+	content: none;
+}
+.content .contentRight .AreaTitle .ProgressBar li.active:after {
+	background-color: #6AC239;
+}
+  /*-----------------------buttons---------------------*/
+
+.content .contentRight .AreaButtons{
+	
+}
+.content .contentRight .AreaButtons div{
+	display: flex;
+	align-items: center;
+	width: 100%;
+}
+.content .contentRight .AreaButtons .BTSaveHelp{
+	padding-left: 30px;
+	justify-content: flex-start;
+}
+.content .contentRight .AreaButtons .BTNextPrevious{
+	justify-content: flex-end;
+} 
+
+.content .contentRight .AreaButtons label{	
+	padding: 8px 10px;
+	margin: 0 5px;
+	border-radius: 5px;
+	font-weight: normal;
+	font-size: 12pt;
+	display: inline-block;
+	cursor: pointer;
+}
+.content .contentRight .AreaButtons label:hover{
+	-webkit-transition: all .3s;
+	-o-transition: all .3s;
+	transition: all .3s;
+}
+.content .contentRight .AreaButtons .help:hover{
+	background: #5DA4DA !important;
+	color: #fff;
+}
+.content .contentRight .AreaButtons .Save:hover{
+	background: #6AC239 !important;	
+	color: #fff;
+}
+.content .contentRight .AreaButtons .BTNextPrevious label:hover{
+	background: #5DA4DA;
+	border: 1px solid #5DA4DA;
+	color: #fff;
+}
+.content .contentRight .AreaButtons label i{
+	padding: 2px;
+	font-size: 13pt;
+}
+
+.content .contentRight .AreaButtons .BTSaveHelp .help{
+	background: #35B7CD;
+	border: none;
+	color: #fff;
+}
+.content .contentRight .AreaButtons .BTSaveHelp .Save{
+	background: #5BB734;
+	border: none;
+	color: #fff;
+}
+.content .contentRight .AreaButtons .BTNextPrevious label{
+	background: #fff;
+	border: 1px solid #5DA4DA;
+	color: #5DA4DA;
+}
+
+/*-----------------Formulário--------------*/
+.content .contentRight .AreaForm div{
+	width: 100%;
+	height: 100%;
+}
+.content .contentRight .AreaForm .form > div{
+	display: none;
+
+}
+
+.content .contentRight .AreaForm .form .active{
+	display: flex !important;
+	flex-direction: column;
+	padding: 10px 20px;
+}
+
+
+
+
+.content .contentRight .AreaForm .form div article{
+	display: flex;	
+
+}
+.content .contentRight .AreaForm .form div article section{
+	display: flex;	
+	flex-direction: column;
+	width: 85%;
+	margin: 5px 10px;
+}
+.content .contentRight .AreaForm .form div article section input[type=text],
+.content .contentRight .AreaForm .form div article section select,
+.content .contentRight .AreaForm .form div article section input[type=textarea]{
+	padding: 1px 3px;
+	width: 95%;
+	font-size: 13pt;
+	margin: 2px 0;
+	color: #444;
+	border: none;
+	border-bottom: 1px solid #ccc;
+}
+.form div article section input[type=text]:hover, .form div article section input[type=text]:focus,
+.form div article section select:hover, .form div article section select:focus,
+.form div article section input[type=textarea]:hover, .form div article section input[type=textarea]:focus
+{	
+	border: none;
+	border-bottom: 1.5px solid #5DA4DA !important;
+	-webkit-transition: border .6s;
+	-o-transition: border .6s;
+	transition: border .6s;
+}
+.form div article section input[type=text]:hover +label, .form div article section input[type=text]:focus +label,
+.form div article section select:hover +label, .form div article section select:focus +label,
+.form div article section input[type=textarea]:hover +label, .form div article section input[type=textarea]:focus +label
+{	
+	color: #5DA4DA !important;
+}
+.content .contentRight .AreaForm .form div article section select{
+	padding-left: 0;
+}
+.content .contentRight .AreaForm .form div article section input[type=textarea]{
+	/*height: 150px;*/
+}
+.content .contentRight .AreaForm .form div article section label{
+	color: #777;
+	font-size: 10pt;
+	padding: 2px 5px;
+}
+
+.content .contentRight .AreaForm .form div article .SelectFoto{
+	width: 23%;
+	margin: -8px;
+	margin-bottom: 5px;
+	align-items: center;
+}
+.content .contentRight .AreaForm .form div article .SelectFoto img{
+	width: 100%;
+	border-radius: 50%;
+}
+.content .contentRight .AreaForm .form div article input[type=file]{
+	display: none;
+}
+.content .contentRight .AreaForm .form div article input[type=file]+label{
+	padding: 8px 15px;
+	background: #5DA4DA;
+	color: #fff;
+	border-radius: 3px;
+	border: none;
+	margin-top: 10px;
+	cursor: pointer;
+}
+.content .contentRight .AreaForm .form div article input[type=file]+label>i{
+	padding: 5px;
+	font-size: 12pt;
+}
+.content .contentRight .AreaForm .form .areaChecks{
+	justify-content: flex-start;
+	padding: 10px;
+}
+
+.content .contentRight .AreaForm .form .areaChecks article{
+	justify-content: flex-start;
+	margin: 0 10px;
+}
+.content .contentRight .AreaForm .form .areaChecks label{
+	margin: 0 10px;
+	padding: 5px 15px 5px 45px;
+	display: inline-block;
+	color: #0774d9;
+	position: relative;
+	font-size: 10pt;
+	cursor: pointer;
+	position: relative;
+}
+.content .contentRight .AreaForm .form .areaChecks label:before{
+	content: '';
+	border: 1.8px solid #5DA4DA;
+	width: 12px;
+	height: 12px;
+	display: inline-block;
+	position: absolute;
+	left: 23px;
+	padding-left: 2px;
+	font-size: 10pt;
+	font-weight: bold;
+	line-height: 13px;
+	border-radius: 2px;
+}
+.content .contentRight .AreaForm .form .areaChecks input[type=checkbox]{
+	display: none;
+}
+.content .contentRight .AreaForm .form .areaChecks input[type=checkbox]:checked + label:before{
+	content: '\2713';
+	background: #5DA4DA;
+	color: #fff;
+}
+.content .contentRight .AreaForm .form div .areaButtonFile{
+	padding-left: 10px;
+}
+.content .contentRight .AreaForm .form div .areaButtonAdd{
+	display: flex;
+	justify-content: flex-end;
+	position: relative;
+	width: 96%;
+}
+.content .contentRight .AreaForm .form div .areaButtonAdd:before{
+	content: '';
+	border-bottom: 1px dashed #ddd;
+	width: 80%;
+	margin-top: 25px;
+	position: absolute;
+	left: 10px;
+}
+.content .contentRight .AreaForm .form div article .btAdd{
+	padding: 8px 10px;
+	background: #6AC239;
+	color: white;
+	border: none;
+	border-radius: 3px;
+	font-size: 12pt;
+	cursor: pointer;
+	transition: all 0.5s;
+}
+.content .contentRight .AreaForm .form div article .btAdd:hover{
+	background: #43A72D;
+}
+.content .contentRight .AreaForm .form .ckSimples{
+	margin: -3px -20px !important;
+	padding: 0 !important;
+}
+.content .contentRight .AreaForm .form .SectionMaior{
+	width: 100%;
+}
+.content .contentRight .AreaForm .form .SectionMaior input[type=text], 
+.SectionMaior input[type=textarea]
+{
+	width: 98% !important;
+}
+.content .contentRight .AreaForm .form .titlte{
+	font-weight:lighter;
+	font-size: 20pt;
+	color: #5DA4DA;
+	margin: 5px 0;
+}
+.content .contentRight .AreaForm .form .areaLazer{
+	justify-content: space-around;
+	flex-wrap: wrap;
+	padding: 10px;
+	width: 100%;
+	height: auto;
+}
+.content .contentRight .AreaForm .form .areaLazer > article{
+	background: #eee;
+	color: #666;
+	border: 1px solid #ddd;
+	margin: 8px;
+	border-radius: 3px;
+	padding: 3px;
+	cursor: pointer;
+	width: auto;
+	height: auto;
+}
+.content .contentRight .AreaForm .form .areaLazer article:hover{
+	background: #ddd;
+	color: #666;
+	transition: all 0.5s ease;
+}
+.content .contentRight .AreaForm .form .areaLazer .select:hover{
+	background: #5DA4DA;
+	color: #fff;
+}
+.content .contentRight .AreaForm .form .areaLazer .select{
+	background: #5DA4DA;
+	color: #fff;
+	border: none;
+	transition: all 0.5s ease;
+}
+.content .contentRight .AreaForm .form .areaLazer i{
+	margin: 5px 10px;
+	width: 10%;
+}
+.content .contentRight .AreaForm .form .areaLazer label{
+	margin: 5px;
+}
+
+.content .contentRight .AreaForm .form .paginator{
+	display: flex;
+	width: 100%;
+	margin-top: 5px;
+	padding-top: 5px;
+	border-top: 1px solid #eeeddd;
+
+}
+.content .contentRight .AreaForm .form .paginator label{
+	padding: 5px;
+	margin: 4px;
+	background: #eee;
+	color: #666;
+	width: 35px;
+	height: 35px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	font-size: 13pt;
+	cursor: pointer;
+}
+.content .contentRight .AreaForm .form .paginator label:hover{
+	background: #ddd;
+}
+.content .contentRight .AreaForm .form .paginator .active,
+.content .contentRight .AreaForm .form .paginator .active:hover{
+	background: #aaa;
+	color: white;
+}
+.content .contentRight .AreaForm .form .paginator p{
+	padding: 15px;
+	margin-left: 10px;
+	font-size: 14px;
+	color: #555;
+}
+
+.content .contentRight .AreaForm .form .selectBox{
+	/*border: none;*/
+	border: 1px solid #ddd;
+	height: auto;
+	cursor: pointer;
+}
+.content .contentRight .AreaForm .form .selectBox i{
+	float: right;
+	padding: 6px;
+	width: 5%;
+	text-align: center;
+	/*border: 1px solid red;*/
+}
+.content .contentRight .AreaForm .form .selectBox .option{
+	/*display: none;*/
+	background: #fff;
+	z-index: 10;
+	position: relative;
+	height: auto;
+	border-top: 1px solid #ccc;
+}
+.content .contentRight .AreaForm .form .selectBox option:hover{
+	background: #5DA4DA;
+}
+.content .contentRight .AreaForm .form .selectBox .option option{
+	margin: 1px;
+	padding: 3px 8px;
+	cursor: default;
+	/*background: #5DA4DA;*/
+}
+.content .contentRight .AreaForm .form .selectBox input[type=text]{
+	padding: 6px 8px;
+	border: none;
+	width: 95%;
+}
+
+
+.content .contentRight .AreaForm .form input[type=range]{
+	width: 100%;
+	appearance: none;
+	-webkit-appearance: none;
+	width: 300px;
+	height: 6px;
+	margin-bottom: 5px;
+	border-radius: 2px;
+	border: 1px solid #ddd;
+	outline: none;
+	
+}
+.slider input::webkit-slider-thumb {
+	appearance: none;
+	-webkit-appearance: none;
+	width: 20px;
+	height: 50px;
+	border-radius: 50px;
+	border: 1px solid #ddd;
+	background-color: #f1f1f1;
+}
+.timeline{
+	padding: 0;
+	margin: 0;
+	list-style: none;
+	display: flex;
+	justify-content: space-between;
+}
+.timeline li{
+	width: 80%;
+	height: 20px;
+}
+.timeline li:after{
+	content: '';
+	width: 1.5px;
+	height: 6px;
+	margin-left: 10px;
+	background-color: #999;
+	position: absolute;
+	
+}
+

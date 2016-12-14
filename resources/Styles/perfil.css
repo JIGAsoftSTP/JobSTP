@@ -1,0 +1,456 @@
+body{
+	background: #f1f1f1;
+}
+
+*{
+	font-family: 'Roboto', sans-serif;
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+/*----------------------Config-----------------*/
+
+.config{
+	position: fixed;
+	right: 0;
+	margin: auto;
+	height: 100%;
+	display: flex;
+	align-items: center;	
+}
+.config .masterConfig{
+	display: flex;
+	align-items: center;
+	position: relative;	
+}
+.config .masterConfig section{
+	background: #fff;
+	padding: 13px;
+	width: 4rem;
+	height: 4rem;
+	z-index: 1;
+	box-shadow: -2px 2px 7px 0 #ccc;
+	color: #777;
+}
+.config .masterConfig section i{
+	font-size: 25pt;
+	cursor: pointer;
+	transition: color .6s;
+}
+.config .masterConfig section i:hover, .configActive{
+	color: #52B3D9;
+	transition: color .6s;
+}
+.config .masterConfig .ConfigVisible{
+	margin-right: 0;
+	transition: margin-right .6s;
+}
+.config .areaPrincipal{
+	width: 20rem;
+	height: 30rem;
+	background: #fff;
+	box-shadow: 0 2px 7px 0 #ccc;
+	margin-right: -20.1rem;
+	transition: margin-right .6s;
+}
+.config .masterConfig .areaPrincipal .areaTool{
+	display: flex;
+	box-shadow: 0 5px 7px -3px #ddd;
+}
+.config .masterConfig .areaPrincipal .areaTool label{
+	padding: 8px;
+	background: #fff;
+	margin-right: 1px;
+	color: #52B3D9;
+	display: flex;
+	align-items: stretch;
+	width: 100%;
+	justify-content: center;
+	border-left: 1px solid #eee;
+	cursor: pointer;
+	transition: color .8s;
+}
+.config .masterConfig .areaPrincipal .areaTool label:hover{
+	color: #3E6D91;
+	transition: color .8s;
+}
+.config .masterConfig .areaPrincipal .areaTool label i{
+	padding: 3px;
+	font-size: 15pt;
+}
+.config .masterConfig .areaPrincipal .areaTool .ConfigSelected{
+	background: #52B3D9;
+	color: #fff;
+}
+.config .masterConfig .areaPrincipal .areaTool .ConfigSelected:hover{
+	color: #eee; 
+}
+
+
+
+.config .masterConfig .areas{
+	display: flex;
+	overflow: hidden;
+}
+.config .masterConfig .areas div{
+	display: block;
+	background: transparent;
+	width: 100%;
+	padding: 10px;
+	/*margin-left: -30rem ;
+	-webkit-transition: margin-right .6s;
+	-o-transition: margin-right .6s;
+	transition: margin-left 3s !important;
+	z-index: 1;*/
+}
+.partsConfigHide{
+	display: none !important;
+/*	
+	z-index: -1;
+	margin-left: 0 !important;*/
+}
+.partConfig{
+	color: red;
+}
+.partChat{
+	color: blue;
+}
+.partNotfication{
+	color: violet;
+}
+
+/*-----------------Content---------------*/
+
+.content{
+	display: flex;
+	color: #fff;
+	flex-wrap: wrap;
+}
+
+.content .contentLeft{
+	background: #52B3D9;
+	width: 19rem;
+	min-width: 19rem;
+	max-width: 25%;
+	padding: 10px;
+	margin-right: 20px;
+	display: flex;
+	flex-direction: column;
+}
+.content .contentRight{
+	width: 60%;
+	max-width: 70%;
+	padding: 5px 0;
+
+}
+
+/*------................Left............---------*/
+
+.content article{
+	display: flex;
+	
+}
+.content .contentLeft h1, h2,h3,h4,h5{
+	font-weight: lighter;
+}
+.content .contentLeft p{
+	text-decoration: none;
+	cursor: default;
+}
+.content .contentLeft .name{
+	font-size: 40px;
+	text-align: center;
+	padding: 5px;
+}
+.content .contentLeft .cargo{
+	font-size: 30px;
+	text-align: center;
+	padding: 5px;
+	color: #EFF1F2;
+}
+.content .contentLeft .foto{
+	width: 100%;
+	display: flex;
+	margin: 0.8rem 0;
+}
+.content .contentLeft .foto section{
+	width: 10rem;
+	height: 10rem;
+	margin: 0 auto;
+}
+.content .contentLeft .foto img{
+	width: 100%;
+	border-radius: 50%;
+	box-shadow: 1px 4px 15px -2px #aaa; 
+}
+.content .contentLeft h2{
+	font-size: 25px;
+	padding: 5px 0;
+	margin: 10px;
+	border-bottom: 1px solid #ddd;
+	width: auto;
+}
+.content .contentLeft .areaContacts{
+	padding: 5px;
+}
+.content .contentLeft .areaContacts i{
+	background: #fff;
+	color: #52B3D9;
+	padding: 8px;
+	border-radius: 50%;
+	margin: 8px 10px;
+}
+.content .contentLeft .areaContacts p{
+	margin: 10px 0;
+	font-weight: 300;
+}
+.content .contentLeft .face{
+	cursor: pointer;
+}
+.content .contentLeft .face:hover{
+	text-decoration: underline;
+}
+.content .contentLeft .aboutMe{
+	font-size: 16px;
+	padding: 5px 0;
+	margin:  0px 10px;
+	text-align: left;
+	line-height: 30px;
+	font-weight: 300;
+}
+.content .contentLeft .linguas{
+	display: -webkit-flex;
+	display: -moz-flex;
+	display: -ms-flex;
+	display: -o-flex;
+	display: flex;
+	flex-direction: column;
+	padding: 0 10px;
+	margin-bottom: 1rem;
+}
+.content .contentLeft .linguas article{
+	display: flex;
+	align-items: center;
+}
+.content .contentLeft .linguas article label{
+	width: 2.5rem;
+	height: 2.5rem;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	border-radius: 50%;
+	color: #52B3D9;
+	background: #fff;
+	margin-top: 1rem;
+	font-weight: bold;
+	text-transform: uppercase;
+}
+.content .contentLeft .linguas article input{
+	margin: 10px;
+}
+
+
+
+
+
+/*------................Right............---------*/
+
+
+.content .contentRight .areaWork{
+	color: #67809F;
+	padding: 20px 10px;
+	margin: 20px;
+	background: #fff;
+	box-shadow: 0 0 5px -1px #ccc;
+	display: flex;
+}
+.content .contentRight .areaIcon{
+	padding: 0 20px;
+	width: 80px;
+}
+.content .contentRight .areaIcon i{
+	font-size: 25px;
+	color: #67809F;
+}
+.content .contentRight .areaIcon img{
+	width: 100%;
+}
+.content .contentRight .experience{
+	font-weight: 400;
+	color: #67809F;
+	font-size: 25px;
+}
+.content .contentRight .ano{
+	color: #67809F;
+	font-weight: normal;
+	margin: 5px 0;
+}
+.content .contentRight .Profission{
+	font-size: 13pt;
+	color: #52B3D9;
+	margin: 5px 0;
+	font-weight: 300;
+}
+.content .contentRight .grup{
+	border-bottom: 1px solid #ddd;
+	padding: 5px 0;
+}
+.content .contentRight .grup:last-child{
+	border-bottom: none;
+}
+.content .contentRight .descrition{
+	color: #67809F;
+	padding: 5px 0;
+	font-weight: 300;
+	font-size: 12pt;
+	line-height: 17pt;
+}
+.content .contentRight .Empregador{
+	color: #67809F;
+	padding: 8px 0;
+}
+.content .contentRight .areaIcone > i{
+	padding: 8px;
+	margin-right: 10px;
+	font-size: 15px; 
+	color: #67809F;
+}
+
+
+/*--------------------Skills-------------------*/
+.areaWork .areaSkills{
+	display: flex;
+	flex-direction: column;
+	text-align: center;
+	align-items: center;
+	width: 100%;
+}
+
+.areaWork .areaSkills h1{
+	font-weight: lighter;
+	margin-bottom: 1rem;
+	padding: 3px;
+	width: 70%;
+}
+
+
+
+/*---------------- style plugin Progress Pie Chart------------*/
+
+
+.chart-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    width:100%;
+    padding: 10px;
+}
+.chart-container .pr-chart-ctrl {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width:20%;
+    margin: 2%;
+}
+
+.chart-container .pr-chart-ctrl .pr-chart {
+    display:flex; 
+    flex-direction: column;
+    position:relative; 
+    width:100%; 
+    margin:0 0 20px 0; 
+    text-align:center; 
+    margin-top: 2rem;
+}
+.chart-container .pr-chart-ctrl .pr-chart canvas {
+	display:flex; 
+	margin:0 auto;
+ 	padding:0; 
+ 	vertical-align:center;
+}
+.chart-container .pr-chart-ctrl .pr-chart i {
+    position:absolute; 
+    top:40%; left:0; 
+    width:100%; 
+    font-size:18pt; 
+    font-style:normal; 
+    color: #808080;
+
+}
+.chart-container .pr-chart-ctrl h4{
+	font-weight: 400;
+	color: #555;
+}
+.chart-container .pr-chart-ctrl p{
+	font-weight: 300;
+	color: #777;
+	margin-top: 1rem;
+}
+
+    
+@media screen and (max-width:500px) {
+    .chart-container .pr-chart-ctrl {
+        width:100%; margin-bottom:50px;
+    } 
+}
+@media screen and (min-width:501px) and (max-width:900px) {
+    .chart-container .pr-chart-ctrl {
+        width:50%; margin-bottom:50px;
+    } 
+    }
+
+
+/*--------------Interestes--------------*/
+
+.areaWork .Interestes{
+	display: flex;
+	flex-direction: column;
+	width: 100%;
+}
+.areaWork .Interestes h1{
+	font-weight: lighter;
+	padding-left: 35px;
+}
+.areaWork .Interestes .areaInterests{
+	padding: 20px;
+	display: flex;
+	flex-wrap: wrap;
+}
+.areaWork .Interestes .areaInterests i{
+	margin: 10px 20px;
+	color: #52B3D9;
+	font-size: 30pt;
+	cursor: default;
+}
+.areaWork .Interestes .areaInterests .tooltip{
+	display: flex;
+	flex-direction: column-reverse;
+}
+.areaWork .Interestes .areaInterests .tooltip span{
+    padding: 10px;
+    text-align: center;
+    background: #000;
+    color: #fff;
+    margin: 5px;
+    margin-top: -50px;
+    border-radius: 3px;
+    position: relative;
+    opacity: 0;
+    visibility: hidden;
+    z-index: 10;    
+    transition-property:opacity, margin-top, visibility, margin-left;
+    transition-duration:0.4s, 0.3s, 0.4s, 0.3s;  
+    transition-timing-function: ease-in-out, ease-in-out, ease-in-out, ease-in-out;    
+}
+.areaWork .Interestes .areaInterests .tooltip:hover span{
+	opacity: 8;
+    visibility: visible;
+    overflow: visible;
+}
+
+
+
+

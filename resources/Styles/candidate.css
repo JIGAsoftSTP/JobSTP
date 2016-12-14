@@ -1,0 +1,210 @@
+*{
+	font-family: 'arial';
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+body{
+	background: #F4F5F9;
+}
+.content{
+	padding-top: 50px;
+}
+.content *{
+	font-family: 'ROBOTO';
+}
+.content .information{
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	padding: 50px;
+}
+.content .information .moreInfo{
+	display: flex;
+}
+.content .information h2{
+	padding: 5px;
+	color: #333;
+}
+.content .information .moreInfo p{
+	padding: 10px;
+	color: #01A5E1;
+	font-weight: bold;
+	
+}
+.content .information .moreInfo p i{
+	padding: 5px;
+}
+
+.contentMore{
+	display: flex;
+	padding: 0 50px;
+	position: absolute;
+	width: 100%;
+}
+.contentMore > div{
+	margin: 0 20px;
+	/*position:absolute;*/
+}
+
+.contentMore .areaAbout{
+	width: 70%;	
+	box-shadow: 0px 0px 10px -6px #000;
+	padding: 20px;
+	background: #fff !important;
+	position: absolute;
+}
+
+.contentMore .areaLitle{
+	width: 20%;
+	padding: 20px;
+	box-shadow: 0px 0px 10px -6px #000;
+	background: #fff !important;
+	position: absolute;
+	right: 0;
+}
+.contentMore .areaAbout p{
+	font-size: 14px;
+	line-height: 28px;
+	width: 95%;
+	text-align: justify;
+	color: #333;
+}
+
+.contentMore h3{
+	font-size: 25px;
+	padding: 3px 0;
+	margin: 5px 0;
+	border-bottom: 3px solid #01A5E1;
+	width: 5%;
+}
+
+.contentMore h2{
+	font-size: 24px;
+	padding: 3px 0;
+	margin: 15px 0;
+}
+
+.areaEducation{
+	display: flex;
+}
+
+.areaEducation section{
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	margin: 10px;
+	width: 30px;
+	height: 30px;
+	padding: 30px;
+	background: #01A5E1;
+	color: #fff;
+	font-size: 50px;
+	text-align: center;
+	border-radius: 50px;
+}
+.areaEducation section img{
+	width: 50px;
+	height: 50px;
+}
+.areaEducation section i{
+	font-size: 40px;
+}
+.areaEducation .descrition{
+	margin-left: 10px;	
+	margin-bottom: 30px;
+	width: 100%;
+}
+.areaEducation .descrition .ano{
+	/*padding: 5px 0;*/
+	color: #01A5E1;
+	font-size: 16px;
+	font-weight: bold;
+}
+.areaEducation .descrition p{
+	width: 95%;
+}
+.areaEducation .descrition .office{
+	padding: 5px 0;
+	font-size: 16px;
+	font-weight: bold;
+}
+.areaEducation .descrition .descritionOffice{
+	text-align: justify;
+}
+.areaLitle{
+
+}
+.areaLitle .foto{
+	width: 170px;
+	height: 170px;
+}
+.areaLitle .foto img{
+	width: 100%;
+	height: 100%;
+	border: 1px solid #ccc;
+	border-radius: 50%;
+	padding: 3px;
+}
+.areaLitle .contact{
+	margin-top: 20px;
+	display: flex;
+	flex-direction: column;
+}
+.areaLitle .contact article{
+	display: flex;
+	border-bottom: 1px solid #ccc;
+	width: 70%;
+}
+.areaLitle .contact article i, .areaLitle .contact article p{
+	padding: 10px 4px;
+}
+.areaLitle .contact article p{
+	color: #01A5E1;
+	cursor: pointer;
+	font-size: 15px;
+}
+.areaLitle .contact .areaContact{
+	display: flex;
+	flex-direction: column;
+}
+.areaLitle .contact .LBcontact, .areaLitle .contact .LBcurriculo{
+	background: #01A5E1;
+	color: #fff;
+	padding: 8px;
+	margin: 20px 0;
+	font-weight: bold;
+	text-align: center;
+	border-radius: 2px;
+	cursor: pointer;
+}
+.areaLitle .contact .LBcontact{
+	width: 70%;
+}
+.areaLitle .contact .LBcurriculo{
+	width: auto;
+}
+.areaLitle .contact .LBNumber{
+	color: #333;
+	padding: 8px 0;
+}
+.areaLitle .contact .LBNumber i{
+	padding: 8px;
+}
+.fixed{
+	position: fixed !important;
+	margin-top: -150px !important;
+
+}
+.relative{
+	position: relative;
+}
+
+
+/*@media only screen and (max-width: 3000px) and (min-width: 617px) {
+   .areaAbout{
+   		width: 50%;
+   		background: red;
+   }
+}*/

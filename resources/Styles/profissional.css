@@ -1,0 +1,295 @@
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: 'arial', 'serif';
+	
+}
+.areafoto{
+	overflow: hidden;
+	width: 100%;
+	height: 100%;
+}
+.areafoto img{
+	width: 1349px;
+	height: 635px;
+}
+.areafoto .areaFrase{
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 635px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-direction: column;
+	background-color: #01A5E1;
+	background: rgba(0,0,0,0.5);
+	color: #ffF;
+	font-weight: bolder;
+}
+.areafoto h1, h2, h4, h5{
+	font-weight: normal;
+}
+.areafoto .areaFrase h1{
+	text-align: center;
+	padding: 10px;
+	font-size: 60px;
+	margin-bottom: 20px;
+	text-transform: uppercase;
+}
+.areafoto .areaFrase .DivFrases{
+	width: 100%;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+.areafoto .areaFrase .Yes{
+	position: absolute;
+	left: 0;
+	transition: left 0.9s;
+}
+
+
+.areafoto .areaFrase .DivFrases i{
+	text-align: center;
+	padding: 5px;
+	font-size: 30px;
+	margin-bottom: 50px;
+	line-height: 40px;
+	color: #fff;
+}
+
+.areafoto h2{
+	text-align: center;
+	padding: 5px;
+	font-size: 60px;
+}
+.areafoto a{
+	text-align: center;
+	padding: 10px;
+	font-size: 18px;
+	text-decoration: none;
+	color: #fff;
+	border: none;
+	border-radius: 5px;
+	font-weight: bolder;
+	transition: all .6s;
+	color: #fff;
+	background: #01A5E1;
+	margin-top: 110px;
+	transition: all .6s;
+}
+.areafoto a:hover{
+	color: #fff;
+	background: #01A5E1;
+	border: 2px solid #01A5E1;
+	transition: all .6s;
+}
+
+.areaFuture{
+	width: 100%;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	overflow: hidden;
+}
+.areaFuture h2{
+	color: #444;
+	margin: 15px;
+	font-size: 35px;
+	padding: 3px;
+	border-bottom: 2px solid #eee;
+	width: 60%;
+	text-align: center;
+}
+.areaFuture .areas{
+	display: flex;
+	padding: 0 100px;
+}
+.areaFuture .areas section{
+	padding: 20px;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+
+.areaFuture .areas .post1{
+	transform: translate(50px, 20px);
+}
+.post2{
+	z-index: 2;
+}
+.post3{
+	transform: translate(-50px, 20px);
+}
+
+.areaFuture .areas section i{
+	border: 2px solid #01A5E1;
+	padding: 30px;
+	border-radius: 70px;
+	font-size: 25px;
+	color: #01A5E1;
+}
+.areaFuture .areas section h4{
+	
+	font-size: 20px;
+	text-align: center;
+	padding: 10px;
+}
+.areaFuture .areas section p{
+	/*font-size: 20px;*/
+	text-align: center;
+	padding: 10px;
+	color: #555;
+	line-height: 30px;
+}
+
+.areaFuture .areabutton{
+	width: 100%;
+	margin: 30px 0;
+	padding: 20px;
+	background: #eee;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+.areaFuture .areabutton p{
+	padding: 10px;
+	font-weight: bolder;
+}
+.areaFuture .areabutton a{
+	padding: 10px;
+	background: #01A5E1;
+	border: none;
+	color: #fff;
+	margin: 5px;
+	text-decoration: none;
+	border-radius: 3px;
+	font-weight: bolder;
+	transition: all .3s;
+}
+.areaFuture .areabutton a:hover{
+	padding: 12px;
+	transition: all .3s;
+}
+
+
+.areaTestemunhos{
+	width: 100%;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	padding: 10px 0;
+}
+coment{
+	position: absolute;
+	font-weight: bolder;
+	font-size: 100px;
+	color: #ccc;
+}
+.icon-quotes-left{
+	left: 50px;
+	margin-top: 40px;
+}
+.icon-quotes-right{
+	right: 50px;
+	margin-top: -100px;
+}
+.divsTestemunhos{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+.areaTestemunhos h2{
+	font-weight: bolder;
+	padding: 3px;
+	width: 50%;
+	margin: 10px;
+	font-size: 30px;
+	color: #333;
+	border-bottom: 2px solid #eee;
+	text-align: center;
+}
+.areaTestemunhos h3{
+	
+	padding: 10px;
+	font-weight: lighter;
+}
+.areaTestemunhos .testemunho{
+	width: 100%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+	text-align: center;
+
+	position: absolute;
+	left: -150%;
+	transition: left 0.9s;
+}
+.areaTestemunhos .testemunho i{
+	margin-top: 20px;
+	padding: 5px;
+	text-align: center;
+	width: 80%;
+	line-height: 30px;
+	color: #555;
+}
+.areaTestemunhos .data{
+	
+}
+.areaTestemunhos article{
+	padding: 20px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.areaTestemunhos article img{
+	border: 2px solid #ddd;
+	padding: 3px;
+	border-radius: 140px;
+	width: 120px;
+	height: 120px;
+}
+.areaTestemunhos article section{
+	margin-left: 10px;
+	
+}
+.areaTestemunhos article section p{
+	text-align: center;
+	color: #555;
+	font-size: 18px;	
+}
+.areaTestemunhos article section .name{
+	color: #333;
+	font-weight: bold;
+	padding: 5px;
+}
+
+.areaTestemunhos .active{
+	position: absolute;
+	left: 0;
+	transition: all 1.3s;
+}
+
+.Controls{
+	display: flex;
+	margin-top: 270px;
+}
+.Controls section{
+	padding: 6px;
+	border: 2px solid #ccc;
+	border-radius: 12px;
+	margin: 3px;
+	cursor: pointer;
+}
+.Controls .select{
+	border: 2px solid #01A5E1 !important;
+}

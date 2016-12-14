@@ -1,0 +1,1170 @@
+body, *{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: "ROBOTO", serif, arial;
+}
+
+header .menu{
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	background: #fff;
+	padding: 0.3rem 0;
+	box-shadow: 3px 4px 10px -1px #eee;
+	z-index: 20;
+}
+header .menu h2{
+	color: #3399CC;
+	font-size: 25pt;
+	font-weight: normal;
+	cursor: default;
+	margin-left: 2rem;
+}
+header .menu .tags{
+	display: flex;
+	align-items: center;
+}
+header .menu .tags label{
+	padding: 0.8rem 0.9rem;
+	color: #717590;
+	cursor: pointer;
+	transition: all .5s;
+}
+header .menu .tags label i{
+	padding: 3px;
+	font-size: 15pt;
+}
+header .menu .tags label .notific_number{
+	position: relative;
+	background: #D91E18;
+	color: #fff;
+	top: 0.5rem;
+	right: 0.5rem;
+	border-radius: 50rem;
+	font-size: 7pt;
+	text-align: center;
+	padding: 0 0.3rem 0 0.3rem;
+	margin-right: -1rem;
+}
+header .menu .tags label:hover{
+	color:#67809F;
+}
+header .menu .tags .search{
+	display: flex;
+	align-items: center;
+}
+header .menu .tags .search .SearcIn{
+	padding: 8px !important;
+	padding-left: 1.5rem !important;
+	width: 100% !important;
+	transition: width 2s;
+}
+header .menu .tags .search [type=text]{
+	border-bottom-left-radius: 30px;
+	border-top-left-radius: 30px;
+	width: 0rem;
+	padding: 0;
+	
+}
+header .menu .tags .search [type=text],
+header .menu .tags .search i{
+	font-size: 12pt;
+	color: #555;
+	border: none;	
+	background: #EFF1F2;
+	font-weight: lighter;
+	float: right;	
+}
+header .menu .tags .search i{
+	cursor: pointer;
+	width: 3rem;
+	text-align: center;
+	border-left: 2px solid #fff;
+	padding: 11px;
+	border-radius: 30px;
+	margin-left: -0.9rem;	
+}
+
+
+header .menu .user{
+	width: 5rem;
+	height: 4rem;
+	padding: 0.8rem;
+	margin: 0 0.3rem;
+	display: flex;
+	align-items: center;
+	cursor: pointer;
+}
+header .menu .user .imgUser{
+	width: 100%;
+	border-radius: 50%;
+}
+header .menu .user .imgDown{
+	width: 50%;
+	height: 50%;
+	cursor: pointer;
+}
+header .menu .nameUser{
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+
+header .menu .nameUser label{
+	color: #9098B8;
+
+}
+header .menu .dropContent{
+	position: absolute;
+	display: flex;
+	flex-direction: column;
+	top: 4.5rem;
+	right: 6rem;
+	z-index: 1;
+	background: #fff;
+	border-radius: 2px;
+	box-shadow: 1px 0 5px -1px #aaa;
+	text-align: center;
+	color: #666;
+	display: none;
+}
+header .menu .dropContent:after{
+	content: ' '; 
+	box-shadow: 1px 0 5px -1px #aaa;
+	border-top: 10px solid #fff;
+	border-left: 10px solid transparent;
+	border-right: 10px solid transparent;
+	border-bottom: 10px solid transparent;
+	width: 0px;
+	height: 0px;
+	margin: auto;
+	position: relative;
+	bottom: 0; 
+
+}
+header .menu .dropContent label{
+	border-bottom: 1px solid #eee;
+	padding: 10px;
+	font-weight: lighter;
+	cursor: pointer;
+	transition: all .5s;
+}
+header .menu .dropContent label:hover{
+	background: #F0F7FA;
+}
+header .menu article{
+	display: flex;
+}
+
+.btArea{
+	position: absolute;
+	right: 0;
+	padding: 20px;
+	display: flex;
+	align-items: center;
+}
+.btArea p, .areaButtonSave p{
+	padding: 8px 20px;
+	color: #fff;
+	font-size: 12pt;
+	margin: 8px;
+	text-align: center;
+	border-radius: 30px;
+	cursor: pointer;
+}
+.btArea p i{
+	padding: 0 3px;
+}
+.btArea .btHelp{
+	background: #60C6D0;	
+}
+.areaButtonSave .btSave{
+	background: #5EDDAF;
+	width: 9rem;
+}
+.areaButtonSave .btSave i{
+	padding-right: 8px;
+}
+/*------------------Content----------------*/ 
+.content{ 
+	background: #EFF1F2;
+	width: 100%;
+	height: auto;
+	display: flex;
+}
+.content .contentLeft{
+	background: #fff;
+	width: 22%;
+	max-width: 25%;
+	margin-right: 20px;
+	display: flex;
+	flex-direction: column;
+	height: auto;
+	box-shadow: 3px 4px 10px -1px #ccc;
+}
+.content .contentRight{
+	width: 60%;
+	max-width: 70%;
+}
+
+/*---------------Left--------------*/
+
+.contentLeft .areaFoto {
+	width: 100%;
+	height: auto;
+	padding: 1rem 0;	
+	display: flex;
+	align-items: center;
+}
+.contentLeft .areaFoto .foto{
+	width: 7rem;
+	height: 7rem;
+	padding: 0.1rem;
+	display: flex;
+}
+.contentLeft .areaFoto p{
+	padding: 3px;
+	font-size: 12pt;
+	color: #34495E;
+}
+.contentLeft .areaFoto section .name{
+	font-weight: normal;
+}
+.contentLeft .areaFoto section .email{
+	font-weight: lighter;
+	font-size: 10pt;
+}
+.contentLeft .areaFoto section img{
+	width: 100%;
+	height: 100%;
+	padding: 5px ;
+	border-radius: 50%;
+}
+.contentLeft .AreaMenu ul{
+	display: flex;
+	flex-direction: column;	
+}
+.contentLeft .AreaMenu ul li{
+	list-style: none;
+	padding: 12px;
+	font-size: 13pt;
+	cursor: pointer;
+	transition: all .5s;
+}
+.contentLeft .AreaMenu .preview li{
+	color: #eee;
+	font-weight: normal;
+	text-align: center;
+}
+.contentLeft .AreaMenu .preview .edit{
+	background: #5EDDAF;
+}
+.contentLeft .AreaMenu .preview .publico{
+	background: #506672;
+}
+
+.contentLeft .AreaMenu .preview .yes:after{
+	content: '';
+	position: absolute;
+	left: 17.4rem;
+	width: 0;
+	height: 0px;
+	
+	border-right: 10px solid #EFF1F2;
+	border-left: 10px solid transparent;
+	border-top: 10px solid transparent;
+	border-bottom: 10px solid transparent;
+}
+.contentLeft .AreaMenu .Menu li{
+	color: #506672;
+	font-weight: lighter;
+}
+.contentLeft .AreaMenu .Menu li i{
+	padding: 14px;
+	color: #3399CC; 
+}
+.contentLeft .AreaMenu .Menu li:hover, 
+.contentLeft .AreaMenu .Menu .active{
+	background: #F0F7FA;
+}
+.contentLeft .AreaMenu .Menu .liAdd{
+	display: flex;
+	cursor: default;
+}
+.contentLeft .AreaMenu .Menu .liAdd input[type="text"]{
+	font-size: 10pt;
+	margin: 3px 0;
+	padding: 8px;
+	color: #506672;
+	border: 1px solid #eee;
+	border-left: 1px solid #EFF1F2;
+	width: 100%;
+}
+
+.contentLeft .AreaMenu .Menu .active{
+	font-weight: normal;
+	border-left: 5px solid #5EDDAF;
+}
+
+.contentLeft .AreaMenu .Menu .icon-pencil{
+	font-size: 7pt;
+	color: #34495E;
+	float: right;
+	padding: 7px;
+}
+.contentLeft .AreaMenu .preview .NewSection{
+	color: #5EDDAF;
+	border: 1px dashed #ddd;
+	width: 85%;
+	margin: 8px auto;
+	padding: 10px;
+	margin-bottom: 2rem;
+}
+.contentLeft .AreaMenu .preview .NewSection i{
+	font-size: 7pt;
+	padding: 4px;
+	border-radius: 50%;
+	background: #5EDDAF;
+	color: #eee;
+	margin: 3px;
+}
+.btsmallSection{
+	cursor: pointer;
+	background: #4BC1E5;
+	color: #fff;
+	font-size: 13pt;
+	font-weight: bold;
+	padding: 5px;
+	text-align: center;
+	width: 2.5REM;
+	height: 2REM;
+	border-radius: 50%;
+	margin: 10px;
+	margin-right: 0;
+	box-shadow: 2px 1px 5px 0px #aaa;
+
+}
+.icon-folder-plus{
+	margin-right: 4px;
+}
+/*-----------------------Right-------------*/
+
+.contentRight{
+	display: flex;
+	flex-direction: column;
+	padding: 2rem 3rem;
+}
+
+.content .contentRight .AreaForm .form > div{
+	display: none;
+
+}
+
+.content .contentRight .AreaForm .form .active{
+	display: flex !important;
+	flex-direction: column;
+	padding: 10px 20px;
+}
+
+
+.contentRight .AreaForm .form article{
+	display: flex;	
+	width: 100%;
+}
+.contentRight .AreaForm .form article section{
+	display: flex;	
+	flex-direction: column;
+	width: 100%;
+}
+.contentRight .AreaForm .form article input[type=text],
+.contentRight .AreaForm .form article select,
+.contentRight .AreaForm .form article textarea{
+	font-size: 13pt;
+	margin: 2px 0;
+	color: #AAB2BD;
+	border: 1px solid #eee;
+	border-left: 1px solid #EFF1F2;
+	width: 100%;
+
+}
+.contentRight .AreaForm .form article textarea{
+	/*height: 80px;
+	overflow: auto;*/
+}
+.contentRight .AreaForm .form article select{
+	margin-top: 0.3rem;
+	padding: 17.3px; 
+	background: #ffffff;
+	width: 100%;
+	appearance: none;
+	-webkit-appearance: none;
+  	-moz-appearance: none;
+  	cursor: pointer;
+  	background-image: url('../images/down.png');
+  	background-repeat: no-repeat;
+  	background-position: right;
+  	text-transform: uppercase;
+}
+
+.contentRight .AreaForm .form article input[type=text],
+.contentRight .AreaForm .form article textarea{
+	margin: -0.3rem 0;
+	padding: 17.3px;
+	transition: all .5s;
+	
+}
+/*.contentRight .AreaForm .form article input[type=text]:placeholder,
+.contentRight .AreaForm .form article textarea:placeholder{
+	color: red;	
+}*/
+.contentRight .AreaForm .form article label{
+	color: #AAB2BD;
+	position: relative;
+	bottom: -2rem;
+	left: 1rem;
+	cursor: text;
+	transition: all .5s;
+	text-transform: uppercase;	
+}
+.contentRight .AreaForm .form article .curency{
+	color: #1C996D;
+}
+.contentRight .AreaForm .form article .in{
+	bottom: -1.1rem;
+	font-size: 10pt;
+	color: #506672;
+
+}
+.contentRight .AreaForm .form article .in + input[type=text],
+.contentRight .AreaForm .form article .in + textarea{
+	padding-left: 16px;
+	padding-top: 30px;
+	padding-bottom: 9px;
+	font-weight: lighter;
+	color: #506672;
+	font-size: 12pt;
+}
+
+.contentRight .AreaForm .form article .sectionSelect{
+	margin-top: 7.5px;
+	/*margin-top: -10px;*/
+}
+.contentRight .AreaForm .form article .sectioMenor{
+	width: 50%;
+}
+
+
+
+.content .contentRight .AreaForm .form div article .SelectFoto{
+	width: 100%;
+	padding-bottom: 5px;
+	align-items: center;
+	background: #fff;
+	margin-top: 5rem;
+}
+.content .contentRight .AreaForm .form div article .SelectFoto .foto{
+	width: 10rem;
+	height: 10rem;
+	padding: 0rem;
+	display: flex;
+	margin-top: -5rem;
+}
+.content .contentRight .AreaForm .form div article .SelectFoto img{
+	width: 100%;
+	border-radius: 50%;
+}
+.content .contentRight .AreaForm .form div article .SelectFoto article{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+.content .contentRight .AreaForm .form div article input[type=file]{
+	display: none;
+}
+.content .contentRight .AreaForm .form div article input[type=file]+label{
+	padding: 8px 15px;
+	background: #60C6D0;
+	color: #fff;
+	border: none;
+	margin-top: 10px;
+	cursor: pointer;
+	position: static;
+	width: auto;
+	/*border-radius: 20px;*/
+}
+.content .contentRight .AreaForm .form div article input[type=file]+label>i{
+	padding: 5px;
+	font-size: 12pt;
+}
+.content .contentRight .AreaForm .form .areaChecks{
+	justify-content: flex-start;
+	padding: 10px 0;
+	background: #fff;
+	margin-bottom: -5px;
+}
+
+.content .contentRight .AreaForm .form .areaChecks article{
+	justify-content: flex-start;
+	
+}
+.content .contentRight .AreaForm .form .areaChecks label{
+	position: relative;
+	bottom: 0;
+	left: 0;
+	margin: 0 10px !important;
+	padding: 5px 0 5px 28px;
+	display: inline-block;
+	color: #0774d9;
+	font-size: 10pt;
+	cursor: pointer;
+}
+.content .contentRight .AreaForm .form .areaChecks label:before{
+	content: '';
+	border: 1.8px solid #5DA4DA;
+	width: 12px;
+	height: 12px;
+	display: inline-block;
+	position: absolute;
+	left: 5px;
+	padding-left: 2px;
+	font-size: 10pt;
+	font-weight: bold;
+	line-height: 13px;
+	border-radius: 2px;
+}
+.content .contentRight .AreaForm .sectionSelect .areaChecks label{
+	color: #2F4761 !important;
+}
+.content .contentRight .AreaForm .form .areaChecks input[type=checkbox]{
+	display: none;
+}
+.content .contentRight .AreaForm .form .areaChecks input[type=checkbox]:checked + label:before{
+	content: '\2713';
+	background: #5DA4DA;
+	color: #fff;
+}
+.content .contentRight .AreaForm .form div .areaButtonFile{
+	padding: 10px 0;
+}
+.content .contentRight .AreaForm .form .areaButtonSave{
+	justify-content: center;
+	padding: 10px;
+}
+
+.content .contentRight .AreaForm .form div .areaButtonAdd{
+	display: none;
+	justify-content: flex-end;
+	position: relative;
+	width: 96%;
+}
+.content .contentRight .AreaForm .form div .areaButtonAdd:before{
+	/*content: '';*/
+	border-bottom: 1px dashed #B2B2B2;
+	width: 90%;
+	margin-top: 25px;
+	position: absolute;
+	left: 1px;
+}
+.content .contentRight .AreaForm .form div .areaButtonAdd li{
+	list-style-type: none;
+	margin-top: 15px;
+}
+.content .contentRight .AreaForm .form div .areaButtonAdd li i{
+	padding: 15px;
+	background: #5EDDAF;
+	color: white;
+	font-weight: lighter;
+	border: none;
+	border-radius: 50%;
+	font-size: 12pt;
+	cursor: pointer;
+	transition: all 0.5s;
+	text-align: center;
+	margin-right: -30px;
+	box-shadow: -1px 3px 6px -1px #888;
+}
+.content .contentRight .AreaForm .form div .areaButtonAdd li i:hover{
+	box-shadow: none;
+}
+.content .contentRight .AreaForm .form div article .btAdd{
+	padding: 8px 10px;
+	background: #6AC239;
+	color: white;
+	border: none;
+	border-radius: 3px;
+	font-size: 12pt;
+	cursor: pointer;
+	transition: all 0.5s;
+}
+.content .contentRight .AreaForm .form div article .btAdd:hover{
+	background: #43A72D;
+}
+
+.content .contentRight .AreaForm .form .titlte{
+	font-weight:lighter;
+	font-size: 20pt;
+	color: #5DA4DA;
+	margin: 5px 0;
+}
+.content .contentRight .AreaForm .form .areaLazer{
+	background: #fff;
+	justify-content: space-around;
+	flex-wrap: wrap;
+	padding: 1.5rem;
+	width: 100%;
+	height: auto;
+}
+.content .contentRight .AreaForm .form .areaLazer > article{
+	background: #eee;
+	color: #666;
+	border: 1px solid #ddd;
+	margin: 8px;
+	border-radius: 3px;
+	padding: 3px;
+	cursor: pointer;
+	width: auto;
+	height: auto;
+}
+.content .contentRight .AreaForm .form .areaLazer article:hover{
+	background: #ddd;
+	color: #666;
+	transition: all 0.5s ease;
+}
+.content .contentRight .AreaForm .form .areaLazer .select:hover{
+	background: #5DA4DA;
+	color: #fff;
+}
+.content .contentRight .AreaForm .form .areaLazer .select{
+	background: #5DA4DA;
+	color: #fff !important;
+	border: none;
+	transition: all 0.5s ease;
+}
+.content .contentRight .AreaForm .form .areaLazer .select label{
+	color: #fff;
+}
+.content .contentRight .AreaForm .form .areaLazer i{
+	margin: 5px 10px;
+	width: 10%;
+}
+.content .contentRight .AreaForm .form .areaLazer label{
+	font-size: 11pt;
+	margin: 5px;
+	cursor: pointer;
+	position: static;
+	text-transform: none;
+	color: #666;
+}
+
+
+.content .contentRight .AreaForm .form .paginator{
+	display: flex;
+	width: 100%;
+	margin-top: 10px;
+	padding-top: 5px;
+	border-top: 1px solid #eeeddd;
+	background: #fff;
+}
+.content .contentRight .AreaForm .form .paginator label{
+	padding: 5px;
+	margin: 4px;
+	background: #eee;
+	color: #666;
+	width: 35px;
+	height: 35px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	font-size: 13pt;
+	cursor: pointer;
+}
+.content .contentRight .AreaForm .form .paginator label:hover{
+	background: #ddd;
+}
+.content .contentRight .AreaForm .form .paginator .active,
+.content .contentRight .AreaForm .form .paginator .active:hover{
+	background: #aaa;
+	color: white;
+}
+.content .contentRight .AreaForm .form .paginator p{
+	padding: 15px;
+	margin-left: 10px;
+	font-size: 14px;
+	color: #555;
+}
+
+.content .contentRight .AreaForm .form .selectBox{
+	/*border: none;*/
+	border: 1px solid #ddd;
+	height: auto;
+	cursor: pointer;
+}
+.content .contentRight .AreaForm .form .selectBox i{
+	float: right;
+	padding: 6px;
+	width: 5%;
+	text-align: center;
+	/*border: 1px solid red;*/
+}
+.content .contentRight .AreaForm .form .selectBox .option{
+	/*display: none;*/
+	background: #fff;
+	z-index: 10;
+	position: relative;
+	height: auto;
+	border-top: 1px solid #ccc;
+}
+.content .contentRight .AreaForm .form .selectBox option:hover{
+	background: #5DA4DA;
+}
+.content .contentRight .AreaForm .form .selectBox .option option{
+	margin: 1px;
+	padding: 3px 8px;
+	cursor: default;
+	/*background: #5DA4DA;*/
+}
+.content .contentRight .AreaForm .form .selectBox input[type=text]{
+	padding: 6px 8px;
+	border: none;
+	width: 95%;
+}
+
+
+.addNew{
+	flex-direction: column;
+	align-items: center;
+	width: auto !important;
+	margin: 0 auto;
+	background: #fff;
+	padding: 1rem;
+	margin-top: 1rem;
+	box-shadow: 3px 4px 10px -1px #ccc;
+	border-radius: 2px;
+	text-align: center;
+}
+.addNew h3{
+	font-weight: normal;
+	font-size: 13pt;
+	padding: 5px;
+	color: #555;
+}
+.addNew h3 i{
+	margin-right: 3px;
+}
+.addNew p{
+	padding: 5px;
+	color: #3498DB;
+	cursor: pointer;
+	transition: all.5s;
+}
+.addNew p:hover{
+	text-decoration: underline;
+}
+.Experience{
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	background: #fff;
+	padding: 1rem;
+	margin-top: 1rem;
+	box-shadow: 3px 4px 10px -1px #ccc;
+	border-radius: 5px;
+	margin-bottom: 1.5rem;
+}
+.Experience i{
+	color: #9098B8;
+	padding: 8px;
+	cursor: pointer;
+}
+.Experience .TitleExp{
+	color: #9098B8;
+	font-size: 13pt;
+	padding: 5px;
+	font-weight: lighter;
+}
+.Experience .editExp i{
+	cursor: pointer;
+	color: #36D7B7;
+}
+.frequency{
+	font-size: 8pt;
+	color: #888;
+	margin-left: 2.2rem;
+	margin-top: 5px;
+}
+
+.areaInformation, .areaTitle{
+	display: flex;
+	justify-content: center;
+	padding: 1rem;
+
+}
+
+.areaInformation p, .title{
+	font-size: 23pt;
+	text-align: center;
+	font-weight: lighter;
+	color: #9098B8;
+}
+
+.content .contentRight .AreaForm .form .outside{
+	display: none !important;
+}
+.top{
+	margin-top: -1rem;
+	transition: all .8s;
+}
+
+/*-------------Check box Multiplo-----------------*/
+
+span > div{
+	background: #fff;
+	border: 1px solid #ddd;
+	border-top: none;
+	box-shadow: 1px 10px 10px 0 #ccc;
+	margin-top: .3rem;
+	position: absolute;
+	width: 50%;
+	z-index: 1;
+	max-height: 12rem;
+	overflow-y: auto;
+	visibility: hidden;
+	transition: all .5s;
+}
+span > .show{
+	visibility: visible;
+}
+span > div article:hover{
+	background: #F0F7FA !important;
+}
+span > label{
+	background: #fff;
+	display: flex;
+	justify-content: space-between;
+	width: 85%;
+}
+span > label .n-Select{
+	text-align: right;
+	font-size: 10pt;
+	color: #4BC1E5;
+	text-transform: capitalize;
+	display: none;
+}
+span > label .n-SelectIn{
+	display: flex !important;
+}
+span > .select{
+  	cursor: pointer;
+  	background-image: url('../images/down.png');
+  	background-repeat: no-repeat;
+  	background-position: right;
+
+}
+.check{
+	background: #F0F7FA !important;
+}
+
+
+/*-----------Caixa Notificação--------------*/
+.onNotfic{
+	visibility: visible !important;
+}
+
+.Notification{
+	position: absolute;
+	box-shadow: 2px 1px 10px 1px #bbb;
+	right: 1rem;
+	top: 4.8rem;
+	z-index: 1;
+	background: #fff;
+	width: 20rem;
+	border-radius: 5px;
+	visibility: hidden;
+	z-index: 10;
+}
+#notific:before{
+	left: 9.5rem;
+}
+#sms:before{
+	left: 6rem;
+}
+.Notification:before{
+	content: "";
+	position: relative;
+	bottom: 28px;
+	width: 0;
+	height: 0;
+	border-left: 15px solid transparent;
+	border-right: 15px solid transparent;
+	border-bottom: 13px solid #fff;
+	z-index: 1;
+}
+
+.Notification > .title{
+	font-size: 13pt;
+	border-bottom: 1px solid #eee;
+	padding: 8px;
+	text-align: left;
+	font-weight: normal;
+	font-size: 12pt;
+	text-transform: uppercase;
+}
+.Notification > .ContentNotification{
+	padding: 1rem;
+}
+.Notification > .ContentNotification .no{
+	display: none !important;
+}
+.Notification > .ContentNotification .noNotification{
+	text-align: center;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+.Notification > .ContentNotification .noNotification > h4,
+.Notification > .ContentNotification .haveNotification section > h4{
+	padding: 5px;
+	color: #555;
+	font-weight: normal;
+}
+.Notification > .ContentNotification >.noNotification > p,
+.Notification > .ContentNotification > .haveNotification section > p{
+	padding: 5px;
+	color: #888;
+	font-size: 10pt;
+}
+
+.Notification > .ContentNotification .haveNotification section{
+	border-bottom: 1px solid #ddd;
+	padding-bottom: 5px;
+}
+.Notification > .ContentNotification .haveNotification section:last-child{
+	border-bottom: none;
+}
+
+.viewmore{
+	padding: 10px 0 0 0;
+	
+}
+.viewmore p{
+	text-align: center;
+	width: 100%;
+	color: #67809F;
+	font-size: 10pt;
+	cursor: pointer;
+}
+.viewmore p:hover{
+	text-decoration: underline;
+}
+
+.no{
+	display: none !important;
+}
+.iconSMS{
+	font-size: 25pt;
+	color: #888;
+}
+
+
+/*---------------------Help---------------------*/
+.showHelp{
+	right: 0 !important;
+}
+.helpArea{
+	position: fixed;
+	width: 22rem;
+	right: -100%;
+	bottom: 0;
+	background: #fff;
+	padding: 10px;
+	box-shadow: -3px 3px 10px 1px #aaa;
+	transition: all .9s;
+}
+.helpArea > .contentHelp > .closeHelp{
+	position: absolute;
+}
+.helpArea > .contentHelp > .closeHelp, 
+.helpArea > .chatHelp .controlChat label{	
+	right: 8px;
+	top: 0;
+	font-size: 15pt;
+	color: #888;
+	padding: 5px;
+	cursor: pointer;
+	font-family: arial;
+	font-weight: bold;
+	text-align: center;
+}
+.helpArea > .contentHelp > .closeHelp:hover,
+.helpArea > .chatHelp .controlChat label:hover{
+	color: #D91E18;
+}
+.helpArea > .contentHelp > article{
+	margin: 10px 8px;
+	display: flex;
+}
+.helpArea > .contentHelp > article > [type=text]{
+	width: 100%;
+}
+.helpArea > .contentHelp > article > [type=text], 
+.helpArea > .contentHelp > article > i{
+	font-size: 13pt;
+	color: #555;
+	border: none;	
+	padding: 10px;
+	background: #EFF1F2;
+	/*font-weight: lighter;*/
+}
+.helpArea > .contentHelp > article > i{
+	cursor: pointer;
+	width: 15%;
+	text-align: center;
+	border-left: 1px solid #fff;
+}
+.helpArea > .contentHelp > h3{
+	font-size: 11pt;
+	font-weight: normal;
+	padding: 5px 10px;
+	color: #555;
+	border-top: 1px solid #eee;
+	margin-top: 20px;
+}
+.helpArea > .contentHelp > section{
+	padding: 5px 2rem;
+	border-bottom: 1px solid #eee;
+}
+.helpArea > .contentHelp > section > p{
+	padding: 4px;
+	font-size: 10pt;
+	color: #3399CC;
+	cursor: pointer;
+}
+.helpArea > .contentHelp > section > p:hover{
+	text-decoration: underline;
+}
+
+.helpArea > .contentHelp > .btContact{
+	background: #fff;
+	color: #555;
+	text-transform: uppercase;
+	padding: 10px;
+	border-radius: 20rem;
+	font-size: 8pt;
+	margin: 10px auto;
+	width: 70%;
+	border: 1px solid #bbb;
+	text-align: center;
+	display: block;
+	cursor: pointer;
+	transition: all .5s;
+}
+.helpArea > .contentHelp > .btContact:hover{
+	background: #eee;
+}
+.helpArea > .contentHelp > .btContact i{
+	padding: 0 10px 0 5px;
+	font-size: 10pt;
+
+}
+
+/*------------------Chat--------------------*/
+.minimize{
+	height: 1.7rem !important;
+	cursor: pointer;
+	margin-top: -0.3rem;
+}
+.helpArea > .chatHelp > .controlChat{
+	display: flex;
+	justify-content: space-between;
+}
+.helpArea > .chatHelp > .controlChat label{
+	color: #333;
+}
+.helpArea > .chatHelp > .controlChat .icon-enlarge2{
+	font-size: 11pt;
+}
+.helpArea > .chatHelp > .controlChat .minim:hover{
+	color: #2ABB9B;
+}
+.helpArea > .chatHelp .controlChat .menu{
+	
+}
+.helpArea > .chatHelp .controlChat .menu:hover{
+	color: initial;
+}
+.helpArea > .chatHelp > .agent{
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+.helpArea > .chatHelp > .agent > p{
+	font-family: 'TAHOMA';
+	padding: 3px;	
+	color: #333;
+}
+.helpArea > .chatHelp > .agent > .NameAgent{
+	font-size: 13pt;
+}
+.helpArea > .chatHelp > .agent > .functionAgent{
+	font-size: 10pt;
+}
+.helpArea > .chatHelp > .areaChat{
+	max-height: 13rem;
+	margin-top: 1rem;
+	overflow-y: auto;
+	overflow-x: hidden;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+}
+.helpArea > .chatHelp > .areaChat::-webkit-scrollbar{
+	width: 10px;
+}
+.helpArea > .chatHelp > .areaChat::-webkit-scrollbar-thumb{
+	border-radius: 5px;
+	background: #ccc;
+}
+.helpArea > .chatHelp > .areaChat > span{
+	margin-bottom: 5px;
+	max-width: 15rem;
+	width: auto;
+	display: block;
+	font-size: 10pt;
+	padding: 8px 15px;
+	border-radius: 30px;
+	position: relative;
+	
+}
+.helpArea > .chatHelp > .areaChat > #me{
+	background: #3498DB;
+	color: #fff;
+	left: 70px;
+	border-bottom-right-radius: 0px;
+}
+.helpArea > .chatHelp > .areaChat > #him{
+	background: #ddd;
+	color: #333;
+	float: left;
+	border-bottom-left-radius: 0px;
+}
+.helpArea > .chatHelp > .whriteChat{
+	display: flex;
+	align-items: center;
+}
+.helpArea > .chatHelp > .whriteChat > textarea{
+	border: 1px solid #ccc;
+	width: 100%;
+	font-size: 10pt;
+	padding: 6px;
+	border-radius: 3px;
+	height: 3rem;
+	margin-top: 5px;
+}
+.helpArea > .chatHelp > .whriteChat > i{
+	cursor: pointer;
+	padding: 5px;
+	color: #3498DB;
+	font-size: 18pt;
+}

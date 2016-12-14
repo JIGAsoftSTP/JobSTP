@@ -1,0 +1,531 @@
+body, *{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: "ROBOTO", serif, arial;
+}
+
+header .menu{
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	background: #fff;
+	padding: 0.3rem 0;
+	box-shadow: 3px 4px 10px -1px #eee;
+	z-index: 20;
+}
+header .menu h2{
+	color: #3399CC;
+	font-size: 25pt;
+	font-weight: normal;
+	cursor: default;
+	margin-left: 2rem;
+}
+header .menu .tags{
+	display: flex;
+	align-items: center;
+}
+header .menu .tags label{
+	padding: 0.8rem;
+	color: #9098B8;
+	cursor: pointer;
+	transition: all .5s;
+}
+header .menu .tags label i{
+	padding: 3px;
+}
+header .menu .tags label:hover{
+	color:#67809F;
+}
+header .menu .user{
+	width: 5rem;
+	height: 4rem;
+	padding: 0.8rem;
+	display: flex;
+	align-items: center;
+	cursor: pointer;
+}
+header .menu .user .imgUser{
+	width: 100%;
+	border-radius: 50%;
+}
+header .menu .user .imgDown{
+	width: 50%;
+	height: 50%;
+	cursor: pointer;
+}
+header .menu .nameUser{
+	margin-right: 2rem;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+
+header .menu .nameUser label{
+	color: #9098B8;
+
+}
+header .menu .dropContent{
+	position: absolute;
+	display: flex;
+	flex-direction: column;
+	top: 4.5rem;
+	right: 6rem;
+	z-index: 1;
+	background: #fff;
+	border-radius: 2px;
+	box-shadow: 1px 0 5px -1px #aaa;
+	text-align: center;
+	color: #666;
+	display: none;
+}
+header .menu .dropContent:after{
+	content: ' '; 
+	box-shadow: 1px 0 5px -1px #aaa;
+	border-top: 10px solid #fff;
+	border-left: 10px solid transparent;
+	border-right: 10px solid transparent;
+	border-bottom: 10px solid transparent;
+	width: 0px;
+	height: 0px;
+	margin: auto;
+	position: relative;
+	bottom: 0; 
+
+}
+header .menu .dropContent label{
+	border-bottom: 1px solid #eee;
+	padding: 10px;
+	font-weight: lighter;
+	cursor: pointer;
+	transition: all .5s;
+}
+header .menu .dropContent label:hover{
+	background: #F0F7FA;
+}
+header .menu article{
+	display: flex;
+}
+
+.content{
+	background: #F7F7F7;
+	width: 100%;
+	height: auto;
+}
+.content > div{
+	width: 100%;
+	display: flex;
+	justify-content: center;	
+}
+.content > div article{
+	display: flex;
+}
+
+/*----------------Area UP--------------------------*/
+
+.content .areaUp{
+	padding: 2rem 2rem;	
+}
+
+.content .UpLeft{
+	flex-direction: column;
+	/*align-items: center;*/
+	margin-top: 1rem;
+	width: 74%;
+}
+.content .UpRight{
+	display: flex;
+	align-items: center;
+	width: 20%;
+}
+
+.content .areaUp .UpLeft h4, .content .areaUp .UpLeft h3{
+	font-weight: normal;
+}
+.content .areaUp .UpLeft h4{
+	color: #67809F;
+	font-size: 15pt;
+	margin-top: 10px;
+}
+.content .areaUp .UpLeft h3{
+	color: #506672;
+	font-size: 20pt;
+	padding: 8px 0;	
+}
+.content .areaUp .UpLeft h4 .N_CV{
+	color: #5EDDAF;
+	font-weight: bold;
+}
+
+
+.content .areaUp .UpRight label{
+	padding: 10px;
+	border-radius: 50px;
+	display: block;
+	width: 13rem;
+	text-align: center;
+	box-shadow: 4px 4px 10px 0px #ddd;
+	background: #5EDDAF;
+	color: #fff;
+	cursor: pointer;
+	font-size: 12pt;
+	border: none;
+	font-weight: normal;
+	text-transform: uppercase;
+	transition: all .3s;
+}
+.content .areaUp .UpRight label:hover{
+	box-shadow: -4px -4px 10px -2px #ddd;
+}
+
+
+/*-----------------Down-----------*/
+
+.content .areaDown{
+	flex-wrap: wrap; 
+}
+.content .areaDown > article{	
+	display: flex;
+}
+.content .areaDown .DownLeft{
+	width: 65%;
+	flex-wrap: wrap;
+	justify-content: space-between;
+}
+.content .areaDown .DownRight{
+	width: 23%;
+}
+
+/*--------------------Down Left------------*/
+
+.content .areaDown .DownLeft span{
+	width: 17rem;
+	height: auto;
+	display: flex;
+	flex-direction: column;
+	background: #fff;
+	border-radius: 5px;
+	align-items: center;
+	padding: 0.5rem 0;
+	padding-bottom: 0;
+	margin: 1rem 0.5px;
+	box-shadow: 1px 5px 10px -2px #ddd;
+}
+.content .areaDown .DownLeft span *{
+	color: #67809F;
+	text-align: center;
+}
+.content .areaDown .DownLeft span .top, 
+.content .areaDown .DownLeft span .areaImg,
+.content .areaDown .DownLeft span .areaDescrition{
+	width: 100%;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+}
+.content .areaDown .DownLeft span .Top{
+	padding: 10px 1rem;
+}
+.content .areaDown .DownLeft span .Top .delete i,
+.content .areaDown .DownLeft span .Top .seeMore i{	
+	cursor: pointer;	
+	padding: 5px;
+	color: #66B2C2;
+}
+.content .areaDown .DownLeft span .Top .days{
+	font-weight: lighter;
+	color: #66B2C2;
+}
+.content .areaDown .DownLeft span .Top .days i{
+	font-size: 8pt;
+	padding: 0 3px;
+	color: #66B2C2;
+}
+
+.content .areaDown .DownLeft span .areaImg{
+	flex-direction: column;
+	margin: 8px 0;
+}
+.content .areaDown .DownLeft span .areaImg img{
+	width: 7rem;
+	border-radius: 50%;
+	border: none;
+	box-shadow: 1px 5px 10px -1px #ddd;
+}
+.content .areaDown .DownLeft span .areaDescrition{
+	flex-direction: column;	
+	padding-bottom: 1rem;
+}
+.content .areaDown .DownLeft span .areaDescrition p, 
+.content .areaDown .DownLeft span .areaDescrition h4{
+	padding: 5px;
+}
+.content .areaDown .DownLeft span .areaDescrition .name{
+	font-size: 13pt;
+}
+.content .areaDown .DownLeft span .areaDescrition .localizaction{
+	font-size: 10pt;
+	color: #AAB2BD;
+}
+.content .areaDown .DownLeft span .areaDescrition .cargo{
+	font-size: 16pt;
+	font-weight: lighter;
+	color: #66B2C2;
+}
+.content .areaDown .DownLeft span .areaDescrition .experiencie{
+	font-size: 10pt;
+}
+.content .areaDown .DownLeft span .areaDescrition .experiencie label{
+	font-size: 12pt;
+	color: #5EDDAF;
+}
+
+.content .areaDown .DownLeft span .areaDescrition .descriction{
+	font-size: 11pt;
+	font-weight: lighter;
+	margin: 5px 0;
+	width: 90%;
+	margin-bottom: 0;
+	border-top: 1px solid #eee;
+}
+.content .areaDown .DownLeft span .areaViewProfile{
+	width: 100%;
+	display: flex;
+	align-items: center;
+}
+.content .areaDown .DownLeft span .viewProfile{
+	border-top: 1px solid #eee;
+	width: 100%;
+	transition: all .5s;
+}
+.content .areaDown .DownLeft span .viewProfile a{
+	text-decoration: none;
+	width: 100%;
+	padding: 0.8rem 0;
+	text-transform: uppercase;
+	display: block;
+}
+.content .areaDown .DownLeft span .viewProfile a:visited{
+	text-decoration: none;
+}
+.content .areaDown .DownLeft span .areaViewProfile .viewProfile a:hover{
+	background: #83D2E2;
+	color: #fff;
+}
+/*--------------Down Right----------*/
+
+.content .areaDown .DownRight{
+	position: relative;
+	margin-left: 2rem;
+	height: 60rem;
+	flex-direction: column;
+}
+.content .areaDown .DownRight > div{
+	background: #fff;
+	margin-top: 1rem;
+	box-shadow: 3px -3px 10px -1px #ddd;
+	border-top-right-radius: 5px;
+	border-top-left-radius: 5px;
+}
+.content .areaDown .DownRight .AreaEstatistics{
+	height: auto;
+}
+.content .areaDown .DownRight .AreaOlds{
+	height: auto;
+	margin-top: 3rem;
+}
+.content .areaDown .DownRight > div h3{
+	width: 100%;
+	padding: 13px;
+	border-top-right-radius: 5px;
+	border-top-left-radius: 5px;
+	/*text-align: center;*/
+	color: #506672;
+	background: #F0F7FA;
+	font-weight: normal;
+	font-size: 12pt;
+	
+}
+.content .areaDown .DownRight > div h3 i{
+	padding-right:8px;
+}
+.content .areaDown .DownRight .AreaEstatistics > div{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+.content .areaDown .DownRight .AreaEstatistics section{
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	width: 100%;
+	padding: 10px;
+	border-right: 1px solid #eee;
+}
+.content .areaDown .DownRight .AreaEstatistics section:last-child{
+	border-right: none;
+	padding-right: 5px;
+}
+.content .areaDown .DownRight .AreaEstatistics section:hover{
+	cursor: pointer;
+	background: #F7F7F7;
+}
+.content .areaDown .DownRight .AreaEstatistics section i{
+	margin: 5px;
+}
+.content .areaDown .DownRight .AreaEstatistics section p{
+	color: #506672;
+	text-align: center;
+	font-weight: lighter;
+	margin: 5px;
+}
+.content .areaDown .DownRight .AreaEstatistics section label{
+	color: #506672;
+	font-size: 10pt;
+	text-align: center;
+	font-weight: bold;
+}
+.content .areaDown .DownRight .AreaEstatistics .publics i{
+	color: #60C6D0;
+}
+.content .areaDown .DownRight .AreaEstatistics .seguidores i{
+	color: #2ABB9B;
+}
+.content .areaDown .DownRight .AreaEstatistics .others i{
+	color: #9B59B6;
+}
+
+
+
+.content .areaDown .DownRight .AreaOlds > div{
+	display: flex;
+	flex-direction: column;
+}
+.content .areaDown .DownRight .AreaOlds article{
+	display: flex;
+	justify-content: space-between;
+	padding: 5px;
+	border-bottom: 1px solid #eee;
+	cursor: pointer;
+}
+.content .areaDown .DownRight .AreaOlds article:hover{
+	background: #F7F7F7;
+}
+.content .areaDown .DownRight .AreaOlds article section{
+	display: flex;
+	flex-direction: column;
+	padding: 5px;
+}
+.content .areaDown .DownRight .AreaOlds article section p{
+	font-size: 10pt;
+	color:#9098B8;
+	padding: 5px;
+}
+.content .areaDown .DownRight .AreaOlds article section data{
+	font-size: 10pt;
+	color: #66B2C2;
+	padding: 5px;
+}
+.content .areaDown .DownRight .AreaOlds .all{
+	padding: 10px;
+	justify-content: center;
+}
+.content .areaDown .DownRight .AreaOlds .all p{
+	padding: 5px;
+	font-size: 10pt;
+	color: #4183D7;
+	text-align: center;
+}
+
+.areaCandidatos{
+	background: #fff;
+	padding: 20px 40px;
+	width: 95%;
+	box-sizing: border-box;
+}
+.areaCandidatos .Formserch{
+	display: flex;
+	background: #F8F8F8;
+	padding: 10px 20px;
+	border: 1px solid #eee;
+	border-radius: 3px;
+}
+.Formserch section{
+	display: flex;
+	flex-direction: column;
+	width: 100%;
+	margin: 10px;
+}
+.Formserch label{
+	color: #333;
+	font-size: 15px;
+	text-transform: uppercase;
+	margin: 5px 1px;
+}
+.Formserch input[type=text], select{
+	padding: 12px;
+	color: #555;
+	border: 1px solid #ddd;
+	width: 95%;
+	font-size: 16px;
+	border-radius: 3px;
+}
+.candidates{
+	display: flex;
+	flex-direction: column;
+	border: 1px solid #eee;
+	margin-top: 60px;
+	margin-bottom: 50px;
+}
+.candidates article{
+	display: flex;
+	align-items: center;
+	padding: 0 20px;
+	border-bottom: 1px solid #eee;
+}
+.candidates .areaface{
+	width: 130px;
+}
+.candidates .areaface img{
+	width: 100px;
+	height: 100px;
+	border-radius: 100px;
+	border: 1px solid #ccc;
+	margin: 5px;
+}
+.candidates .areaProfissao{
+	width: 400px;
+	display: flex;
+	flex-direction: column;
+}
+.candidates .arealocalizacao{
+	width: 400px;
+	padding: 10px;
+	display: flex;
+}
+
+
+
+.candidates .CandidateName{
+	padding: 10px 20px;
+	font-size: 16px;
+	color: #222;
+	font-family: 'Roboto';
+}
+.candidates .CabndidateOffice{
+	padding: 0 20px;
+	font-size: 13px;
+	color: #222;
+	font-family: 'Roboto';
+}
+.candidates .CandidateLocalization{
+	font-size: 14px;
+	color: #222;
+	font-family: 'Roboto';
+}
+.candidates .icon-location{
+	font-family: 'Roboto';
+	color: #21B8C6;
+	margin: 0 10px;
+}

@@ -1,0 +1,454 @@
+*{
+	margin: 0;
+	padding: 0;
+	font-family: 'Roboto','arial';
+	box-sizing: border-box;
+}
+div, article, section, p{
+	display: flex;
+}
+.areaTitle{
+	overflow: hidden;
+	width: 100vw;
+	height: 100vh;
+	box-sizing: border-box;
+	z-index: 1;
+	background: url('../images/img8.jpg') no-repeat;
+	background-attachment: fixed;
+	background-size: cover;
+}
+.areaTitle img{
+	width: 100vw;
+	height: 100vh;
+}
+.areaTitle .areaText{
+	width: 100vw;
+	height: 100vh;
+	background: rgba(0,0,0,0.6);
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+.areaTitle .areaText .textContacte{
+	font-size: 50px;
+	color: #fff;
+	text-align: center;
+	text-transform: uppercase;
+	font-weight: lighter;
+}
+.area2{
+	padding: 20px;
+}
+.area2 i{
+	color: #fff;
+	font-size: 2rem;	
+}
+.area2 label{
+	width: 150px;
+	border-bottom: 1px solid #fff;
+	margin: 20px;
+}
+.areaPrincipal p{
+	line-height: 30px;
+	font-size: 1.3rem;
+	color:  #fff;
+	font-weight: lighter;
+	text-align: center;
+}
+
+.areaText .btAnunciarVaga{
+	position: relative;
+	top: 50px;
+	padding: 10px;
+	color: #01A5E1;
+	border: 2px solid #01A5E1;
+	font-size: 18px;
+	border-radius: 3px;
+	cursor: pointer;
+}
+.areaText .btAnunciarVaga:hover{
+	color: #fff;
+	background: #01A5E1;
+	transition: all .6s;
+}
+
+
+.areaSections{
+	width: 100%;
+	background: #fff;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	width: 100vw;
+	height: 100vh;
+	padding: 3rem 1rem;
+}
+.areaSections .Sections{
+	align-items: center;
+	justify-content:  center;
+	margin-top: 1rem;
+}
+.areaSections section{
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-end;
+	align-items: center;
+	width: 17%;
+	padding: 1rem;
+}
+.title{
+	font-size: 2.5rem;
+	color: #777;
+	text-align: center;
+	font-weight: lighter;
+	padding: 1rem;
+}
+.title:after{
+	content: '';
+	width: 2rem;
+	border: 2px solid #3AD880;
+	display: block;
+	margin: 10px auto; 
+}
+.subtitle{
+	line-height: 1.9rem;
+	font-size: 1.3rem;
+	color: #777;
+	text-align: center;
+	font-weight: lighter;
+	padding: 5px;
+}
+.areaSections section i{
+	font-size: 2.5rem;
+	color: #777;
+	text-align: center;
+	padding: 5px;
+	margin-top: 1rem;
+}
+.areaSections section p{
+	line-height: 1.9rem;
+	color: #777;
+	text-align: center;
+	font-weight: lighter;
+	padding: 5px;
+	margin-top: 1rem;
+	font-size: 1rem;
+}
+
+.areaFotoText{
+	background: #fff;
+	color: #fff;
+	height: 65vh;
+}
+.areaFotoText section{
+	flex-direction: column;
+}
+.areaFotoText .first{
+	background: #000;
+	padding: 1rem;
+	padding-left: 5rem;
+	width: 50vw;
+}
+.areaFotoText .Second{
+	background: url(../images/Pub3.jpg) no-repeat;
+	background-size: cover;
+	background-attachment: fixed;
+	width: 30vw;
+}
+.areaFotoText .third{
+	width: 30vw;
+	overflow: hidden;
+}
+.areaFotoText .first h3{
+	font-size: 1.9rem;
+	padding: .8rem 0;
+	border-bottom: 1px solid #fff;
+	width: 80%;
+	color: #ccc;
+}
+.areaFotoText .first .lastP{
+	padding-bottom: .8rem;
+	border-bottom: 1.5px solid #fff;
+}
+.areaFotoText .first p{
+	line-height: 1.8rem;
+	font-weight: normal;
+	padding: 5px;
+	margin-top: 1rem;
+	font-size: 1rem;
+	width: 80%;
+	color: #aaa;
+}
+.areaFotoText .first .buttonArea{
+	justify-content: flex-start; 
+	padding-right: 5.9rem;
+	margin-top: .5rem;
+}
+.areaFotoText .first label{
+	padding: .6rem;
+	background: #eee;
+	color: #111;	
+	margin-top: 1rem;
+	width: 35%;
+	font-size: .8rem;
+	text-align: center;
+	cursor: pointer;
+	font-weight: bolder;
+	border-radius: 3px;
+}
+
+.areaFotoText .Second > div{
+	background: rgba(0,0,0,.6);
+	width: 100%;
+	height: 100%;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+}
+.areaFotoText .Second > div p{
+	padding: 5px;
+	font-size: 1.5rem;
+	color: rgb(155, 120, 210);
+}
+.areaFotoText .Second > div i{
+	font-size: 4rem;
+	color: rgb(155, 120, 210);
+}
+.areaFotoText .third img{
+	width: 100%;
+	opacity: 0;
+	transform: translateX(500px);
+	transition: all 1s;
+}
+
+
+.areaSetings{
+	width: 100vw;
+	height: 100vh;
+	background: #fff;
+	flex-direction: column;
+	justify-content: center;
+}
+.areaSetings section{
+	flex-direction: column;
+}
+.areaSetings > article > section{
+	width: 100vw;
+	/*border: 1px solid red;*/
+	justify-content: center;	
+}
+.areaSetings > section{
+	align-items: center;
+	padding-bottom: .5rem;
+}
+.areaSetings > article > section > article{
+	width: 70%;
+	padding: .5rem 0;
+}
+.areaSetings > article > section p{
+	line-height: 26px;
+	font-size: .9rem;
+	color:  #888;
+	padding: 8px 0;
+	font-weight: normal;
+}
+.areaSetings > article > section i{
+	font-size: 2.2rem;
+	color: rgba(155, 120, 210, .8);
+	padding: .6rem 1.5rem;
+}
+.areaSetings > article > .Second > img{
+	width: 70%;
+	transform: translateY(200px);
+	opacity: 0;
+	transition: all 2s;
+}
+.areaSetings .first{
+	align-items: flex-end;
+	padding-right: 1rem;
+}
+.areaSetings .Second{
+	align-items: center;
+	width: 60vw;
+}
+.areaSetings .third{
+	align-items: flex-start;
+	text-align: right;
+	padding-left: 1rem;
+}
+
+
+.areaEstatistics{
+	background: #000;
+	width: 100vw;
+	height: 100vh;
+}
+.areaEstatistics div{
+	width: 100vw;
+	height: 100vh;
+	color: #fff;
+	padding: 2rem;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+.areaEstatistics > div article{
+	padding: 2rem;
+}
+.areaEstatistics > div article > section{
+	padding: 1rem;
+	flex-direction: column;
+	width: 10rem;
+	height: 10rem;
+	border-radius: 1rem;
+	transform: rotate(30deg);
+	border: 4px solid #3AD880;
+	margin: 2rem .6rem;
+	align-items: center;
+	justify-content: center;
+}
+.areaEstatistics > div h3{
+	color: #eee;
+	font-weight: bold;
+}
+.areaEstatistics > div > p{
+	color: #ddd;
+}
+.areaEstatistics > div > label{
+	padding: .8rem 1rem;
+	text-transform: uppercase;
+	background:  #01A5E1;
+	cursor: pointer;
+	font-size: .9rem;
+	font-weight: normal;
+	border-radius: .2rem;
+}
+.areaEstatistics div article > section label{
+	font-weight: bold;
+	font-size: 2rem;
+	padding: 5px;
+	transform: rotate(-30deg);
+}
+.areaEstatistics div article > section p{
+	font-size: 1.1rem;
+	transform: rotate(-30deg);
+	padding-left: 2.8rem;
+}
+
+
+.areaClientsSay{
+	background: #eee;
+	width: 100vw;
+	height: 100vh;
+}
+.areaClientsSay div{
+	width: 100vw;
+	height: 100vh;
+	padding: 2rem;
+	flex-direction: column;
+	align-items: center;
+}
+.areaClientsSay div article{
+	margin-top: 3rem;
+	align-items: center;
+}
+.areaClientsSay div section{
+	flex-direction: column;
+	align-items: center;
+	background: #fff;
+	padding: 1rem;
+	margin: 1rem;
+	width: 23vw;
+	box-shadow: 10px -6px 20px -5px #aaa;
+	border-radius: 5px;
+	transform: translateX(-300px);
+	opacity: 0;
+	transition: all 2s;
+}
+.areaClientsSay section p{
+	line-height: 1.5rem;
+	color: #777;
+	text-align: center;
+	padding: 8px;
+	font-size: .8rem;
+}
+.areaClientsSay section .namePerson{
+	font-size: .9rem;
+	line-height: 1rem;
+	color: #555;
+}
+.areaClientsSay section .functionPerson{
+	line-height: 0rem;
+	color: #aaa;
+}
+.areaClientsSay section .comment{
+	padding: 1rem .5rem;
+	
+}
+.areaClientsSay section img{
+	border: 1px solid #ddd;
+	width: 6.5rem;
+	height: 6.5rem;
+	border-radius: 5rem;
+	margin-top: -4.2rem;
+	padding: .2rem;
+	background: #fff;
+}
+.areaClientsSay section label{
+	margin: .6rem 0;
+	padding: .6rem 1rem;
+	text-transform: uppercase;
+	background:  #E9E9E9;
+	cursor: pointer;
+	font-size: .61rem;
+	font-weight: normal;
+	border-radius: .2rem;
+	color: #666;
+}
+
+.areaParceiros{
+	background: #fff;
+	width: 100vw;
+	height: 68vh;
+}
+.areaParceiros{
+	display: flex;
+	flex-direction: column;
+	padding: 1rem;
+}
+.areaParceiros h3{
+	font-size: 35pt;
+	font-weight: lighter;
+	color: #555;
+	padding: 10px;
+	margin: 1rem 0;
+	text-align: center;
+}
+.areaParceiros div{
+	display: flex;
+	align-items: center;
+}
+.areaParceiros > div{
+	flex-direction: column;
+}
+.areaParceiros .parceiros{	
+	padding: 3rem;
+	margin-bottom: 5rem;
+	width: 100%;
+	display: flex;
+	justify-content: center;
+}
+.areaParceiros .parceiros img{	
+	cursor: pointer;
+	width: 8rem;
+	/*filter: saturate(0%);*/
+}
+.areaParceiros > div  i{
+	padding: .5rem;
+	margin: .5rem;
+	margin-top: -2rem;
+	font-size: 2rem;
+	cursor: pointer;
+	color: #999;
+}
