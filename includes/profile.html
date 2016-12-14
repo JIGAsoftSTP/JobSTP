@@ -1,0 +1,806 @@
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+	<title>New Profile</title>
+	<link rel="stylesheet" href="../resources/Styles/profile.css">
+	<link rel="stylesheet" href="../resources/Styles/fonts.css">
+	<link rel="stylesheet" href="../resources/Styles/animate.min.css">
+</head>
+<body>
+	<header>
+		<div class="menu">
+			<h2>JobSTP</h2>
+			<article>
+				<section class="tags">
+
+					<label class="search"><input type="text" placeholder="Pesquisar..." class="InputSearch SearcIn"><i class="icon-search"></i></label>
+
+					<label for="" class="sms"><i class=" icon-mail4"></i><i class="notific_number no">3</i></label>
+					
+					<div class="Notification " id="sms">
+						<h5 class="title">Suas Mensagens</h5>
+						<div class="ContentNotification">	
+							<div class="noNotification">
+								<i class="iconSMS icon-bubbles3"></i>
+								<h4>Não tens Mensagens no momento.</h4>
+								<p>As suas mensagens aparecerão aqui.</p>
+
+							</div>
+							<div class="haveNotification no">
+								<section>
+									<h4>Title Notification</h4>
+									<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. </p>
+								</section>
+								<section>
+									<h4>Title Notification</h4>
+									<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. </p>
+								</section>
+								<section>
+									<h4>Title Notification</h4>
+									<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. </p>
+								</section>
+								<article class="viewmore"><p>Ver Mais</p> </article>
+							</div>
+						</div>						
+					</div>
+
+					<label for="" class="notific"><i class="icon-bell"></i><i class="notific_number">3</i> </label>
+
+					<div class="Notification" id="notific">
+						<h5 class="title">Suas Notificações</h5>
+						<div class="ContentNotification">	
+							<div class="noNotification no">
+							<i class="iconSMS icon-alarm"></i>
+								<h4>Não tens notificações no momento.</h4>
+								<p>Te notificaremos quando receberes avaliações e/ou visitas no teu perfil.</p>
+
+							</div>
+							<div class="haveNotification">
+								<section>
+									<h4>Title Notification</h4>
+									<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. </p>
+								</section>
+								<section>
+									<h4>Title Notification</h4>
+									<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. </p>
+								</section>
+								<section>
+									<h4>Title Notification</h4>
+									<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. </p>
+								</section>
+								<article class="viewmore"><p>Ver Mais</p> </article>
+							</div>
+						</div>						
+					</div>
+					<label class="config"><i class="icon-cog"></i></label>
+				</section>	
+				<section class="user">
+					<img src="../resources/images/user.png" class="imgUser">
+					<img src="../resources/images/down.png" class="imgDown">
+				</section>
+				<div class="dropContent">
+					<label for="">Terminar Seçcão</label>
+					<label for="">Profile</label>
+				</div>
+			
+				
+			</article>
+		</div>
+	</header>
+	<div class="btArea">
+		<p class="btHelp"><i class="icon-lifebuoy"></i> Ajuda</p>
+	</div>
+	<div class="content">
+		<div class="contentLeft">
+			<div class="areaFoto">
+				<section class="foto">
+					<img src="../resources/images/user.png">
+				</section>
+				<section>
+					<p class="name">Person Name</p>
+					<p class="email">person@hotmail.com</p>
+				</section>
+				
+			</div>
+			<div class="AreaMenu">
+				<ul class="preview">
+					<li class="publico">Público</li>
+					<li class="edit yes">Modo de Edição</li>
+					
+				</ul>
+				<ul class="Menu">
+					<li id="0" class="active"> <i class="icon-address-book"></i> Sobre Mim <i class=" icon-pencil"></i></li>
+					<li id="1"> <i class="icon-user"></i> Informação Pessoal </li>
+					<li id="2"> <i class="icon-books"></i> Formação Académica</li>
+					<li id="3"> <i class="icon-briefcase"></i> Experiência Profissional</li>
+					<li id="4" > <i class="icon-copy"></i> Certificados</li>
+					<li id="5"> <i class="icon-user-check"></i> Competências Pessoais</li>
+					<li id="6"> <i class="icon-lifebuoy"></i> Lazer</li>
+				</ul>
+				<ul class="preview">
+					<li class="NewSection "><i class="icon-plus"></i> Adicionar Secção</li>
+				</ul>
+			</div>
+			
+		</div>
+		<div class="contentRight">
+			<div class="AreaForm">
+				<div class="form">
+					<div id="0" class="active AbautMe">
+						<article>
+							<section class="SelectFoto">
+								<section class="foto">
+									<img src="../resources/images/user.png">
+								</section>
+								<article>
+									<input type="file" name="" id="file" multiple="false">
+									<label for="file" id=""><i class="icon-upload2"></i> Carregar Foto</label>
+								</article>
+							</section>
+						</article>
+						
+						<article>
+							<section>
+								<label>Emprego ou cargo desejado</label>
+								<input type="text">
+							</section>
+						</article>
+						<article>
+							<section>
+								<label>Expectativa Salarial</label>
+								<input type="text" class="curency">
+							</section>
+							<section>
+								<label>Anos de experiência</label>
+								<input type="text">
+							</section>
+						</article>
+						<article>
+							<section class="sectionSelect">
+								<span class="selectBoxes">
+									<label for="">Indústrias de Interesse <p class="n-Select">X selecionados</p></label>
+									<input type="text" placeholder="Selecione" class="select">
+									<div>
+										<article class="areaChecks">
+											<input type="checkbox" name="" id="ck1">
+											<label for="ck1">Cheq 1 </label>
+										</article>
+										<article class="areaChecks">
+											<input type="checkbox" name="" id="ck2">
+											<label for="ck2">Cheq 2 </label>
+										</article>
+										<article class="areaChecks">
+											<input type="checkbox" name="" id="ck3">
+											<label for="ck3">Cheq 3 </label>
+										</article>
+										<article  class="areaChecks">
+											<input type="checkbox" name="" id="ck4" >
+											<label for="ck4">Cheq 4 </label>
+										</article>
+										<article class="areaChecks">
+											<input type="checkbox" name="" id="ck5">
+											<label for="ck5">Cheq 5 </label>
+										</article>
+										
+									</div>
+								</span>
+								<!-- <select>
+									<option>Indústrias de Interesse</option>
+								</select> -->
+							</section>
+
+						</article>
+						<article class="">
+							<section>
+								<label>Sobre Mim</label>
+								<textarea></textarea>
+							</section>
+						</article>
+						<article class="areaButtonSave">
+							<p class="btSave"><i class="icon-download"></i> Salvar</p>
+						</article>
+					</div>
+
+					<div id="1" class="InfoPess">
+						<article class="areaTitle">
+								<p class="title">Informe os seus dados Pessoais</p>
+							</article>
+						<article>
+							<section>
+								<label for="">Primeiro Nome</label>
+								<input type="text" name="">
+							</section>
+							<section>
+								<label for="">Último nome</label>
+								<input type="text" name="">
+							</section>
+						</article>
+						<article>
+							<section class="sectionSelect">
+								<select>
+									<option>Sexo</option>
+									<option>Feminino</option>
+									<option>Masculino</option>
+								</select>
+							</section>
+							<article class="sectionSelect">
+								<select>
+									<option>Dia</option>
+									<option></option>
+								</select>
+								<select>
+									<option>Mês</option>
+									<option></option>
+								</select>
+								<select>
+									<option>Ano</option>
+									<option></option>
+								</select>
+							</article>
+						</article>
+						<article>
+							<section>
+								<select class="sectionSelect">
+									<option>Nacionalidade</option>
+									<option>Santomense</option>
+								</select>
+							</section>
+							<section>
+								<select class="sectionSelect">
+									<option>Segunda Nacionalidade</option>
+									<option>Português</option>
+								</select>
+							</section>
+						</article>
+						<article>
+							<section class="sectionSelect">
+								<select class="sectionSelect">
+									<option>País de residência</option>
+									<option>São Tomé</option>
+								</select>
+							</section>
+							<section>
+								<label>Distrito</label>
+								<input type="text" name="">
+							</section>
+						</article>
+						<article>
+							<section>
+								<label>Morada/Endereço</label>
+								<input type="text" name="">
+							</section>
+							<section class="sectioMenor">
+								<label>Telefone</label>
+								<input type="text" name="">
+							</section>
+						</article>
+						<article>
+							<section>
+								<label>Correio eletrónico</label>
+								<input type="text" name="">	
+							</section>
+							<section>
+								<label>facebook</label>
+								<input type="text" name="">
+							</section>
+						</article>
+						<article class="areaButtonSave">
+							<p class="btSave"><i class="icon-download"></i> Salvar</p>
+						</article>
+					</div>
+
+
+
+					<div id="2" class="FormAcad">
+						<div class="areaInformation">
+							<p>Nenhuma Informação Adicionada neste campo!</p>
+						</div>
+						<div class="Experience outside">
+							<section>
+								<article>
+									<i class="icon-menu2"></i>
+									<p class="TitleExp">Licenciatura em Sistemas e Tecnologias de Informação</p>
+								</article>
+								<article>
+									<p class="frequency"><i class="icon-office"></i> Universidade de São Tomé e Príncipe</p>
+									<p class="frequency"><i class="icon-clock"></i> A frequentar</p>
+								</article>
+							</section>					
+							<p class="editExp"><i class="icon-pencil2"></i></p>
+							
+						</div>
+						<div class="bodyFormAcad outside">
+							<article class="areaTitle">
+								<p class="title">Nova Formação Académica</p>
+							</article>
+							<article class="areaChecks ckSimples">
+								<input type="checkbox" name="" id="ck6">
+								<label for="ck6">A Frequentar (Caso ainda não tenha Terminado) </label>
+							</article>
+							<article>
+								<section>
+									<label>Data de Início</label>
+									<input type="text">
+								</section>
+								<section>
+									<label>Data de Fim</label>
+									<input type="text">
+								</section>
+							</article>
+							<article>
+								<section>
+									<label>Designação da Qualificação</label>
+									<input type="text">
+								</section>
+								<section class="sectionSelect sectioMenor">
+									<select>
+										<option>Nível</option>
+									</select>
+								</section>
+							</article>
+							<article>
+								<section class="sectionSelect">
+									<select>
+										<option>Disciplinas/Competências profissionais</option>
+									</select>
+								</section>
+							</article>
+							<article>
+								<section>
+									<label>Nome da Organização de Ensino</label>
+									<input type="text">
+								</section>
+								<section class="sectionSelect sectioMenor">
+									<select>
+										<option>Nível</option>
+									</select>
+								</section>
+							</article>
+							<article>
+								<section class="sectionSelect">
+									<select>
+										<option>País</option>
+									</select>
+								</section>
+								<section>
+									<label>Cidade</label>
+									<input type="text">
+								</section>
+							</article>
+							<article>
+								<section class="SectionMaior">
+									<label>Informação Adicional</label>
+									<input type="text">
+								</section>
+							</article>
+							<article class="areaButtonSave">
+								<p class="btSave"><i class="icon-download"></i> Salvar</p>
+							</article>
+						</div>
+						
+						<article class="addNew">
+							<p class="btNewExper"><i class="icon-plus"> </i> Adicionar Nova Formação Académica</p>
+						</article>
+						
+					</div>
+
+
+					<div id="3" class="ExpProf">
+						<div class="areaInformation">
+							<p>Nenhuma Informação Adicionada neste campo!</p>
+						</div>
+						<div class="Experience outside">
+							<section>
+								<article>
+									<i class="icon-menu2"></i>
+									<p class="TitleExp">Licenciatura em Sistemas e Tecnologias de Informação</p>
+								</article>
+								<article>
+									<p class="frequency"><i class="icon-office"></i> Universidade de São Tomé e Príncipe</p>
+									<p class="frequency"><i class="icon-clock"></i> A frequentar</p>
+								</article>
+							</section>					
+							<p class="editExp"><i class="icon-pencil2"></i></p>
+							
+						</div>
+						<div class="bodyFormAcad outside">
+							<article class="areaTitle">
+								<p class="title">Nova Experiência Profissional</p>
+							</article>
+							<article class="areaChecks ckSimples">
+								<input type="checkbox" name="" id="ck7">
+								<label for="ck7">Local de Trabalho actual</label>
+							</article>
+							<article>
+								<section>
+									<label>Data de Início</label>
+									<input type="text">
+								</section>
+								<section>
+									<label>Data de Fim</label>
+									<input type="text">
+								</section>
+							</article>
+							<article>
+								<section class="sectionSelect">
+									<select>
+										<option>Nível Profissional</option>
+									</select>
+									<label></label>
+								</section>
+								<section  class="sectionSelect">
+									<select>
+										<option>Area Profissional</option>
+									</select>
+								</section>
+							</article>
+							<article>
+								<section class="sectionSelect">
+									<select>
+										<option>Principais actividades e Responsabilidades</option>
+									</select>
+								</section>
+							</article>
+							<article>
+								<section>
+									<label>Nome do Empregador</label>
+									<input type="text">
+								</section>
+								<section class="sectionSelect">
+									<select>
+										<option>Area Funcional</option>
+									</select>
+								</section>
+							</article>
+							<article>
+								<section class="sectionSelect">
+									<select>
+										<option>País</option>
+									</select>
+								</section>
+								<section>
+									<label>Cidade</label>
+									<input type="text">
+								</section>
+							</article>
+							<article>
+								<section>
+									<label>Informação Adicional</label>
+									<input type="text">	
+								</section>
+							</article>
+							<article class="areaButtonSave">
+								<p class="btSave"><i class="icon-download"></i> Salvar</p>
+							</article>
+						</div>
+						<article class="addNew">
+							<p class="btNewExper"><i class="icon-plus"> </i> Adicionar Nova Experiência Profissional</p>
+						</article>
+					</div>
+
+
+
+					<div id="4" class="Cert">
+						<div class="areaInformation">
+							<p>Nenhuma Informação Adicionada neste campo!</p>
+						</div>
+						<div class="Experience outside">
+							<section>
+								<article>
+									<i class="icon-menu2"></i>
+									<p class="TitleExp">Licenciatura em Sistemas e Tecnologias de Informação</p>
+								</article>
+								<article>
+									<p class="frequency"><i class="icon-office"></i> Universidade de São Tomé e Príncipe</p>
+									<p class="frequency"><i class="icon-clock"></i> A frequentar</p>
+								</article>
+							</section>					
+							<p class="editExp"><i class="icon-pencil2"></i></p>
+							
+						</div>
+						<div class="bodyFormAcad outside">
+							<article class="areaTitle">
+								<p class="title">Novo Certificado</p>
+							</article>
+							<article>
+								<section>
+									<label>Nome do Curso</label>
+									<input type="text">
+								</section>
+							</article>
+							<article>
+								<section>
+									<label>Instituição</label>
+									<input type="text">
+								</section>
+								<section class="sectionSelect">
+									<select>
+										<option>País</option>
+									</select>
+									
+								</section>
+							</article>
+							<article>
+								<section>
+									<label>Data de Início</label>
+									<input type="text">
+								</section>
+								<section>
+									<label>Data de Conclusão</label>
+									<input type="text">
+								</section>
+							</article>
+							<article>
+								<section>
+									<label>Informações Adicionais</label>
+									<input type="text">
+								</section>
+							</article>
+							<article class="areaButtonFile">
+								<input type="file" name="" class="btCarregarCertf" id="FileCertifcate">
+								<label for="FileCertifcate"><i class="icon-upload"></i> Carregar Certificado</label>
+							</article>
+							<article class="areaButtonSave">
+									<p class="btSave"><i class="icon-download"></i> Salvar</p>
+								</article>
+						</div>
+						<article class="addNew">
+							<p class="btNewExper"><i class="icon-plus"> </i> Adicionar Novos Certificados</p>
+						</article>
+					</div>
+
+
+					<div id="5" class="Comp">
+						<h3 class="titlte">Competência</h3>
+						<article>
+							<section class="sectionSelect">
+								<select>
+									<option>Competência</option>
+								</select>
+							</section>
+							<section class="sectionSelect">
+								<select>
+									<option>Nível de domínio</option>
+								</select>
+							</section>
+						</article>
+						<ul class="areaButtonAdd">
+							<li class="btAdd"><i class="icon-plus"></i></li>
+						</ul>
+						<h3 class="titlte">Língua</h3>
+						<article>
+							<section class="sectionSelect">
+								<select>
+									<option>Língua</option>
+								</select>
+							</section>
+							<section class="sectionSelect">
+								<select>
+									<option>Nível de domínio</option>
+								</select>
+							</section>
+						</article>
+						<ul class="areaButtonAdd">
+							<li class="btAdd"><i class="icon-plus"></i></li>
+						</ul>
+
+					</div>
+
+
+					<div id="6" class="Lazer">
+						<h3 class="titlte">Gostos - Escolha no máximo 8</h3>
+						<article class="areaLazer">
+							<article>
+								<i class="icon-paint-format"></i>
+								<label>Pintura</label>
+							</article>
+							<article>
+								<i class="icon-headphones"></i>
+								<label for=""> Música</label>
+							</article>
+							<article>
+								<i class=" icon-film"></i>
+								<label for=""> Filmes</label>
+							</article>
+							<article>
+								<i class=" icon-camera"></i>
+								<label for=""> Fotografia</label>
+							</article>
+							<article>
+								<i class="icon-mic"></i>
+								<label for=""> Cantar</label>
+							</article>
+							<article>
+								<i class=" icon-clubs"></i>
+								<label for=""> Jogos</label>
+							</article>
+							<article>
+								<i class="icon-book"></i>
+								<label for=""> Ler</label>
+							</article>
+							<article>
+								<i class="icon-cart"></i>
+								<label for=""> Compras</label>
+							</article>
+							<article>
+								<i class="icon-bubbles"></i>
+								<label for=""> Conversar</label>
+							</article>
+							<article>
+								<i class="icon-binoculars"></i>
+								<label for=""> Pesquisar</label>
+							</article>
+							<article>
+								<i class="icon-facebook2"></i>
+								<label for=""> Facebook</label>
+							</article>
+							<article>
+								<i class="icon-twitter"></i>
+								<label for=""> Twitter</label>
+							</article>
+							<article>
+								<i class="icon-youtube2"></i>
+								<label for=""> </label>
+							</article>
+							<article>
+								<i class="icon-paint-format"></i>
+								<label>Pintura</label>
+							</article>
+							<article>
+								<i class="icon-headphones"></i>
+								<label for=""> Múcica</label>
+							</article>
+							<article>
+								<i class=" icon-film"></i>
+								<label for=""> Filmes</label>
+							</article>
+							<article>
+								<i class=" icon-camera"></i>
+								<label for=""> Fotografia</label>
+							</article>
+							<article class="select">
+								<i class="icon-mic"></i>
+								<label for=""> Cantar</label>
+							</article>
+							<article>
+								<i class=" icon-clubs"></i>
+								<label for=""> Jogos</label>
+							</article>
+							<article>
+								<i class="icon-book"></i>
+								<label for=""> Ler</label>
+							</article>
+							<article>
+								<i class="icon-cart"></i>
+								<label for=""> Compras</label>
+							</article>
+							<article>
+								<i class="icon-bubbles"></i>
+								<label for=""> Conversar</label>
+							</article>
+							<article>
+								<i class="icon-binoculars"></i>
+								<label for=""> Pesquisar</label>
+							</article>
+							<article class="select">
+								<i class="icon-facebook2"></i>
+								<label for=""> Facebook</label>
+							</article>
+							<article>
+								<i class=" icon-film"></i>
+								<label for=""> Filmes</label>
+							</article>
+							<article>
+								<i class=" icon-camera"></i>
+								<label for=""> Fotografia</label>
+							</article>
+							<article class="select">
+								<i class="icon-mic"></i>
+								<label for=""> Cantar</label>
+							</article>
+							<article>
+								<i class=" icon-clubs"></i>
+								<label for=""> Jogos</label>
+							</article>
+							<article>
+								<i class="icon-book"></i>
+								<label for=""> Ler</label>
+							</article>
+							<article>
+								<i class="icon-facebook2"></i>
+								<label for=""> Facebook</label>
+							</article>
+							<article>
+								<i class="icon-twitter"></i>
+								<label for=""> Twitter</label>
+							</article>
+							<article>
+								<i class="icon-youtube2"></i>
+								<label for=""> </label>
+							</article>
+							<article>
+								<i class="icon-paint-format"></i>
+								<label>Pintura</label>
+							</article>
+							<article>
+								<i class="icon-headphones"></i>
+								<label for=""> Múcica</label>
+							</article>
+
+						</article>
+
+						<div class="paginator">
+							<label for="" class="active">1</label>
+							<label for="">2</label>
+							<label for="">3</label>
+							<label for="">4</label>
+							<label for="">5</label>
+							<label for="">6</label>
+							<label for="">7</label>
+							<label for="">8</label>
+							<label for="">...</label>
+							<label for="">«</label>
+							<label for="">»</label>
+							<p>Página 1/16</p>
+						</div>
+
+						<article class="areaButtonSave">
+							<p class="btSave"><i class="icon-download"></i> Salvar</p>
+						</article>
+					</div>
+				</div>
+				
+			</div>
+		</div>
+	</div>
+	<div class="helpArea">
+		<div class="contentHelp">
+			<h1 class="title">Ajuda</h1><label class="closeHelp" title="Fechar">x</label>
+			<article><input type="text" placeholder="Como podemos ajudá-lo?"><i class="icon-search"></i></article>
+
+			<h3>Perguntas Frequentes</h3>
+			<section>
+				<p>1. Lorem ipsum dolor sit amet dolor?</p>
+				<p>2. Lorem ipsum dolor sit amet, consectetur?</p>
+				<p>3. Lorem ipsum dolor sit amet, consectetur? Lorem ipsum, consectetur?</p>
+			</section>
+			<label for="" class="btContact"><i class="icon-bubbles"></i> Entre em Contacto connosco.</label>
+		</div>
+		<div class="chatHelp no">
+			<div class="controlChat">
+				<label class="menu"><i class="icon-menu"></i></label>
+				<article>
+					<label class="minim" title="Minimizar">_</label>
+					<label class="closeChat" title="Fechar">x</label>
+				</article>
+				
+			</div>
+			<div class="agent">
+				<p class="NameAgent">Maria Antónia</p>
+				<p class="functionAgent">Support Agent</p>
+			</div>
+			<div class="areaChat">
+				<span id="me">Lorem ipsum Dolor sit amet, concectetur? </span>
+				<span id="him">Consectetur?</span>
+				<span id="me">Lorem ipsum Dolor sit amet, concectetur? </span>
+				<span id="him">Lorem ipsum Dolor sit amet, concectetur? </span>
+				<span id="me">Consectetur?</span>
+
+			</div>
+			<div class="whriteChat">
+				<textarea name="" id="" cols="30" rows="1" class="inputMessage"></textarea>
+				<i class="icon-telegram sendSMS" title="Enviar"></i>
+			</div>
+			<div class="other">
+
+			</div>
+		</div>
+	</div>
+	
+</body>
+
+<script type="text/javascript" src="../resources/Script/JQuery.js"></script>
+<script type="text/javascript" src="../resources/Script/profile.js"></script>
+
+</html>
